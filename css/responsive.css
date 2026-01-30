@@ -1,0 +1,170 @@
+/* Wide -> Desktop */
+@media (max-width: 1279px) {
+  .footer__grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: var(--gap);
+  }
+}
+
+/* Desktop -> Tablet */
+@media (max-width: 1023px) {
+  :root {
+    --header-h: var(--header-h-mobile);
+  }
+
+  .header__nav:not(.mobile-open) {
+    display: none;
+  }
+
+  .header__burger {
+    display: flex;
+  }
+
+  .header__phone span {
+    display: none;
+  }
+
+  .grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .advantages__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process__timeline {
+    grid-template-columns: 1fr;
+    gap: 0;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .process__timeline::before {
+    top: 0;
+    bottom: 0;
+    left: 28px;
+    right: auto;
+    width: 2px;
+    height: 100%;
+  }
+
+  .process__step {
+    flex-direction: row;
+    text-align: left;
+    gap: 20px;
+    padding: 16px 0;
+  }
+
+  .process__step-number {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .map-section {
+    grid-template-columns: 1fr;
+  }
+
+  .map__embed iframe {
+    min-height: 350px;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap-lg);
+  }
+}
+
+/* Tablet -> Mobile */
+@media (max-width: 767px) {
+  .grid--3,
+  .grid--2 {
+    grid-template-columns: 1fr;
+  }
+
+  .advantages__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero__badges {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__cta .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .gallery__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .calc__options.grid--2 {
+    grid-template-columns: 1fr;
+  }
+
+  .calc__options--row {
+    flex-direction: column;
+  }
+
+  .calc__result-form-fields {
+    flex-direction: column;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer__nav {
+    align-items: center;
+  }
+
+  .footer__contacts {
+    align-items: center;
+  }
+
+  .footer__contact-item {
+    justify-content: center;
+  }
+}
+
+/* Small phone */
+@media (max-width: 479px) {
+  .advantages__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .calc {
+    padding: 20px 16px;
+  }
+
+  .calc__checkboxes {
+    flex-direction: column;
+  }
+
+  .badge {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .header__phone {
+    display: none;
+  }
+}

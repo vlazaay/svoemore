@@ -1,0 +1,59 @@
+:root {
+  /* Colors */
+  --color-primary: #0052B5;
+  --color-primary-dark: #003d87;
+  --color-primary-light: #3378cc;
+  --color-accent: #00a3ff;
+  --color-dark: #0a1628;
+  --color-darker: #060e1a;
+  --color-light: #f8f9fb;
+  --color-white: #ffffff;
+  --color-text: #1a1a2e;
+  --color-text-light: #b0b8c9;
+  --color-text-muted: #6b7280;
+  --color-success: #10b981;
+  --color-error: #ef4444;
+  --color-overlay: rgba(10, 22, 40, 0.7);
+
+  /* Typography */
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --fs-hero: clamp(2.5rem, 5vw, 4.5rem);
+  --fs-h1: clamp(2rem, 4vw, 3rem);
+  --fs-h2: clamp(1.5rem, 3vw, 2.25rem);
+  --fs-h3: clamp(1.125rem, 2vw, 1.5rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-xs: 0.75rem;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --lh-tight: 1.2;
+  --lh-normal: 1.6;
+  --ls-wide: 0.08em;
+
+  /* Spacing */
+  --section-py: clamp(60px, 8vw, 120px);
+  --container-width: 1200px;
+  --container-px: clamp(16px, 4vw, 40px);
+  --gap: clamp(16px, 2vw, 32px);
+  --gap-lg: clamp(24px, 3vw, 48px);
+
+  /* Borders & Shadows */
+  --radius: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.16);
+  --shadow-glow: 0 0 30px rgba(0, 82, 181, 0.3);
+
+  /* Transitions */
+  --transition: 0.3s ease;
+  --transition-slow: 0.6s ease;
+
+  /* Header */
+  --header-h: 72px;
+  --header-h-mobile: 60px;
+}

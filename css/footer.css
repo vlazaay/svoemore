@@ -1,0 +1,124 @@
+.footer {
+  background-color: var(--color-darker);
+  color: var(--color-text-light);
+  padding: clamp(48px, 6vw, 80px) 0 0;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: var(--gap-lg);
+  padding-bottom: clamp(40px, 5vw, 60px);
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer__logo img {
+  height: 36px;
+  width: auto;
+}
+
+.footer__slogan {
+  font-style: italic;
+  color: var(--color-accent);
+  font-size: var(--fs-small);
+  margin-bottom: 8px;
+}
+
+.footer__company {
+  font-size: var(--fs-small);
+  color: var(--color-text-light);
+}
+
+.footer__heading {
+  color: var(--color-white);
+  font-size: var(--fs-body);
+  margin-bottom: 20px;
+  font-weight: var(--fw-semibold);
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__nav a {
+  color: var(--color-text-light);
+  font-size: var(--fs-small);
+  transition: color var(--transition);
+}
+
+.footer__nav a:hover {
+  color: var(--color-white);
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--fs-small);
+  color: var(--color-text-light);
+  transition: color var(--transition);
+}
+
+a.footer__contact-item:hover {
+  color: var(--color-white);
+}
+
+.footer__contact-item svg {
+  flex-shrink: 0;
+  stroke: var(--color-accent);
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer__bottom p {
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+}
+
+/* Scroll to top */
+.scroll-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all var(--transition);
+}
+
+.scroll-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-top:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+}

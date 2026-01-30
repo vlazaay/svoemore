@@ -1,0 +1,227 @@
+{
+  "nav": {
+    "services": "Services",
+    "advantages": "Why Us",
+    "calculator": "Calculator",
+    "process": "How We Work",
+    "gallery": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "SVOE MORE",
+    "slogan": "From the first spring to the endless sea",
+    "desc": "Construction of pools, spas and hammams in Kyiv and the region",
+    "badge1": "10+ years of experience",
+    "badge2": "5-year warranty",
+    "badge3": "Custom design",
+    "cta1": "Calculate cost",
+    "cta2": "Our projects"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We create water spaces of any complexity — from compact spas to large pool complexes",
+    "pool": {
+      "title": "Pools",
+      "text": "Construction of skimmer and overflow pools. Indoor and outdoor, private and commercial. Full cycle — from design to commissioning.",
+      "link": "Calculate cost →"
+    },
+    "spa": {
+      "title": "Spa & Jacuzzi",
+      "text": "Design and installation of spa zones, jacuzzis and relaxation areas. We create a personal oasis of relaxation tailored to your wishes.",
+      "link": "Calculate cost →"
+    },
+    "hammam": {
+      "title": "Hammam",
+      "text": "Construction of Turkish baths of any configuration. Steam generators, heated loungers, natural stone and mosaic finishes.",
+      "link": "Calculate cost →"
+    },
+    "cta": {
+      "title": "We create a space for your relaxation",
+      "text": "Get a free consultation and cost estimate for your project",
+      "btn": "Book a consultation"
+    }
+  },
+  "advantages": {
+    "title": "Why Choose Us",
+    "subtitle": "We combine experience, quality and an individual approach in every project",
+    "experience": {
+      "label": "Years of experience",
+      "text": "Over ten years of creating water spaces for our clients"
+    },
+    "projects": {
+      "label": "Completed projects",
+      "text": "From private pools to commercial spa complexes"
+    },
+    "warranty": {
+      "label": "Warranty on work",
+      "text": "Full warranty on all completed work and materials"
+    },
+    "individual": {
+      "label": "Individual approach",
+      "text": "Each project is unique and designed for your needs"
+    },
+    "turnkey": {
+      "label": "Turnkey",
+      "text": "From design and material procurement to launch and operation training"
+    },
+    "premium": {
+      "label": "Premium materials",
+      "text": "We use only proven equipment and materials from leading manufacturers"
+    }
+  },
+  "calc": {
+    "title": "Cost Calculator",
+    "subtitle": "Calculate the approximate cost of your project in 5 simple steps",
+    "prev": "Back",
+    "next": "Next",
+    "step1": {
+      "title": "Select the type of structure",
+      "pool": "Pool",
+      "spa": "Spa / Jacuzzi",
+      "hammam": "Hammam",
+      "complex": "Complex"
+    },
+    "step2": {
+      "title": "Construction details",
+      "poolType": "Pool type",
+      "skimmer": "Skimmer",
+      "overflow": "Overflow",
+      "location": "Location",
+      "outdoor": "Outdoor",
+      "indoor": "Indoor",
+      "spaSize": "Spa size",
+      "spa4": "4 persons",
+      "spa6": "6 persons",
+      "spa8": "8 persons"
+    },
+    "step3": {
+      "title": "Dimensions",
+      "length": "Length (m)",
+      "width": "Width (m)",
+      "depth": "Depth (m)",
+      "volume": "Volume:",
+      "area": "Area (m²)"
+    },
+    "step4": {
+      "title": "Finishing & Equipment",
+      "finish": "Finishing material",
+      "pvc": "PVC Liner",
+      "pvcDesc": "Economy",
+      "mosaic": "Mosaic",
+      "mosaicDesc": "Mid-range",
+      "stone": "Natural stone",
+      "stoneDesc": "Premium",
+      "equipment": "Equipment class",
+      "standard": "Standard",
+      "comfort": "Comfort",
+      "premium": "Premium",
+      "extras": "Additional options",
+      "heating": "Heating",
+      "led": "LED lighting",
+      "counter": "Counter-current",
+      "waterfall": "Waterfall",
+      "cover": "Cover"
+    },
+    "step5": {
+      "title": "Calculation result",
+      "price": "Approximate cost:",
+      "from": "from",
+      "to": "to",
+      "currency": "UAH",
+      "disclaimer": "The exact cost is determined after a specialist visit and estimate preparation",
+      "formTitle": "Get an exact calculation",
+      "name": "Your name",
+      "phone": "Your phone",
+      "messenger": "Preferred messenger",
+      "submit": "Get exact calculation"
+    }
+  },
+  "process": {
+    "title": "How We Work",
+    "subtitle": "6 simple steps from idea to your own sea",
+    "step1": {
+      "title": "Application",
+      "text": "You submit an application on the website or call us. We will contact you within 30 minutes."
+    },
+    "step2": {
+      "title": "Specialist visit",
+      "text": "Free measurement and consultation on site. Assessment of conditions and possibilities."
+    },
+    "step3": {
+      "title": "Design",
+      "text": "Development of a 3D project, technical documentation and a detailed estimate."
+    },
+    "step4": {
+      "title": "Preparation",
+      "text": "Procurement of materials and equipment, preparation of the construction site."
+    },
+    "step5": {
+      "title": "Construction",
+      "text": "Execution of work with regular photo reports at each stage of construction."
+    },
+    "step6": {
+      "title": "Handover",
+      "text": "Final inspection, operation training, 5-year warranty registration."
+    }
+  },
+  "gallery": {
+    "title": "Our Projects",
+    "subtitle": "Each project is an individual solution created with attention to detail",
+    "all": "All",
+    "pools": "Pools",
+    "spas": "Spa",
+    "hammams": "Hammam"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Leave a request and we will contact you within 30 minutes",
+    "info": {
+      "title": "Contact Information",
+      "address": "Kyiv region, Sofiyivska Borshchahivka, Mykilska St. 1b",
+      "hours": "Mon-Fri: 9:00-18:00, Sat: 10:00-15:00"
+    },
+    "form": {
+      "nameLabel": "Your name *",
+      "namePlaceholder": "Enter your name",
+      "nameError": "Enter your name (min. 2 characters)",
+      "phoneLabel": "Phone *",
+      "phonePlaceholder": "+380 XX XXX XX XX",
+      "phoneError": "Enter a valid phone number",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "emailError": "Enter a valid email",
+      "serviceLabel": "Service",
+      "serviceDefault": "Select a service",
+      "servicePool": "Pool",
+      "serviceSpa": "Spa / Jacuzzi",
+      "serviceHammam": "Hammam",
+      "serviceComplex": "Complex",
+      "serviceOther": "Other",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "submit": "Send request"
+    }
+  },
+  "map": {
+    "title": "Find Us",
+    "address": "Kyiv region, Sofiyivska Borshchahivka, Mykilska St. 1b",
+    "hours": "Mon-Fri: 9:00-18:00, Sat: 10:00-15:00",
+    "directions": "Get directions"
+  },
+  "footer": {
+    "slogan": "From the first spring to the endless sea",
+    "company": "Construction of pools, spas and hammams in Kyiv and the region",
+    "navTitle": "Navigation",
+    "servicesTitle": "Services",
+    "contactsTitle": "Contacts",
+    "address": "Sofiyivska Borshchahivka, Mykilska St. 1b",
+    "copyright": "© 2025 Svoe More LLC. All rights reserved."
+  },
+  "modal": {
+    "success": {
+      "title": "Thank you for your request!",
+      "text": "We will contact you within 30 minutes during business hours.",
+      "btn": "OK"
+    }
+  }
+}

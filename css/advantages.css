@@ -1,0 +1,40 @@
+.advantages__grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.advantages__item {
+  text-align: center;
+  padding: clamp(24px, 3vw, 36px);
+}
+
+.advantages__number {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: var(--fw-bold);
+  color: var(--color-accent);
+  line-height: 1;
+  display: inline;
+}
+
+.advantages__plus {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: var(--fw-bold);
+  color: var(--color-accent);
+  display: inline;
+}
+
+.advantages__label {
+  font-size: var(--fs-h3);
+  color: var(--color-white);
+  margin: 12px 0 8px;
+}
+
+.advantages__item p {
+  font-size: var(--fs-small);
+  color: var(--color-text-light);
+}
+
+.advantages__icon-wrap {
+  margin: 0 auto 8px;
+}
