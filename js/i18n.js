@@ -60,14 +60,33 @@ const I18n = (function () {
       return Promise.resolve();
     }
 
-    return fetch('js/lang/' + lang + '.json')
-      .then(function (res) { return res.json(); })
+    // Get base path for GitHub Pages compatibility
+    var basePath = getBasePath();
+    var url = basePath + 'js/lang/' + lang + '.json';
+
+    return fetch(url)
+      .then(function (res) {
+        if (!res.ok) {
+          throw new Error('HTTP ' + res.status);
+        }
+        return res.json();
+      })
       .then(function (data) {
         translations[lang] = data;
       })
       .catch(function (err) {
-        console.warn('Failed to load translations for', lang, err);
+        console.warn('Failed to load translations for', lang, ':', err);
       });
+  }
+
+  function getBasePath() {
+    // Detect if we're in a subdirectory (like GitHub Pages)
+    var scripts = document.querySelectorAll('script[src*="i18n.js"]');
+    if (scripts.length > 0) {
+      var src = scripts[0].getAttribute('src');
+      return src.replace('js/i18n.js', '');
+    }
+    return '';
   }
 
   function applyTranslations() {

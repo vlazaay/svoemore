@@ -78,3 +78,20 @@
   padding: clamp(24px, 3vw, 40px);
   box-shadow: var(--shadow-md);
 }
+
+.form-consent {
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.form-consent a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  transition: color var(--transition);
+}
+
+.form-consent a:hover {
+  color: var(--color-primary-dark);
+}

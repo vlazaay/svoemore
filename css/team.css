@@ -1,0 +1,122 @@
+/* Team Section */
+.team {
+  background: var(--color-dark);
+  padding: clamp(60px, 8vw, 100px) 0;
+}
+
+.team__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-lg);
+  align-items: center;
+}
+
+.team__image {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.team__image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 3px solid var(--color-accent);
+  border-radius: var(--radius-lg);
+  pointer-events: none;
+}
+
+.team__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.team__placeholder {
+  aspect-ratio: 16/10;
+  background: linear-gradient(135deg, var(--color-darker) 0%, var(--color-dark) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: 40px;
+}
+
+.team__placeholder svg {
+  width: 80px;
+  height: 80px;
+  stroke: var(--color-accent);
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.team__placeholder p {
+  font-size: var(--fs-small);
+}
+
+.team__content {
+  padding: 20px 0;
+}
+
+.team__title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h2);
+  color: var(--color-white);
+  margin-bottom: 24px;
+}
+
+.team__text {
+  font-size: var(--fs-body);
+  color: var(--color-text-light);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.team__stats {
+  display: flex;
+  gap: 40px;
+}
+
+.team__stat {
+  text-align: center;
+}
+
+.team__stat-number {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+}
+
+.team__stat-label {
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+  margin-top: 8px;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .team__wrapper {
+    grid-template-columns: 1fr;
+    gap: var(--gap-md);
+  }
+
+  .team__content {
+    text-align: center;
+  }
+
+  .team__stats {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .team__stats {
+    flex-direction: column;
+    gap: 24px;
+  }
+}

@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   ContactForm.init();
   ScrollAnimations.init();
   SmoothScroll.init();
+  Popup.init();
 
   // Lazy load Google Maps
   lazyLoadMap();

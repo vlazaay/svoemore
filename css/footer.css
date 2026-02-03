@@ -80,6 +80,33 @@ a.footer__contact-item:hover {
   stroke: var(--color-accent);
 }
 
+.footer__socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-text-light);
+  transition: all var(--transition);
+}
+
+.footer__social:hover {
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+.footer__social svg {
+  stroke: currentColor;
+}
+
 .footer__bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding: 20px 0;
