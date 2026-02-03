@@ -35,7 +35,7 @@ if (empty($name) || empty($phone)) {
 }
 
 // Build email body
-$to = 'info@svoemore.com.ua'; // Change to actual company email
+$to = 'sale@svoemore.com.ua';
 $subject = "=?UTF-8?B?" . base64_encode("Нова заявка з сайту: $name") . "?=";
 
 $body = "Нова заявка з сайту Своє Море\n";

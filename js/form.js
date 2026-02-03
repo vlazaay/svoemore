@@ -90,7 +90,7 @@ const ContactForm = (function () {
       submitBtn.textContent = 'Надсилаємо...';
     }
 
-    fetch('/api/send-email.php', {
+    fetch('api/send-email.php', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
