@@ -60,36 +60,21 @@ function initTeamSlider() {
   var gallery = document.getElementById('teamGallery');
   if (!gallery) return;
 
-  var mainImg = document.getElementById('teamMainImg');
-  var thumbs = gallery.querySelectorAll('.team__thumb');
+  var cards = gallery.querySelectorAll('.team__card');
   var images = [];
   var current = 0;
 
-  thumbs.forEach(function (t) {
-    images.push(t.querySelector('img').src);
+  cards.forEach(function (c) {
+    images.push(c.querySelector('img').src);
   });
 
-  // Click thumbnail → set as main
-  gallery.querySelector('.team__thumbs').addEventListener('click', function (e) {
-    var thumb = e.target.closest('.team__thumb');
-    if (!thumb) return;
-    var idx = parseInt(thumb.dataset.index, 10);
-    if (isNaN(idx) || idx === current) return;
-    setActive(idx);
+  // Click card → open lightbox
+  gallery.addEventListener('click', function (e) {
+    var card = e.target.closest('.team__card');
+    if (!card) return;
+    var idx = parseInt(card.dataset.index, 10);
+    if (!isNaN(idx)) openLightbox(idx);
   });
-
-  // Click main photo → open lightbox
-  mainImg.addEventListener('click', function () {
-    openLightbox(current);
-  });
-
-  function setActive(idx) {
-    thumbs[current].classList.remove('active');
-    current = idx;
-    thumbs[current].classList.add('active');
-    mainImg.src = images[current];
-    mainImg.dataset.index = current;
-  }
 
   // ---- Lightbox ----
   var lightbox, lbImg, lbCounter, lbTouchStartX;
@@ -152,7 +137,6 @@ function initTeamSlider() {
   function navLightbox(dir) {
     current = (current + dir + images.length) % images.length;
     updateLightbox();
-    setActive(current);
   }
 
   function updateLightbox() {
