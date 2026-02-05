@@ -773,41 +773,49 @@
     <!-- ========== TEAM ========== -->
     <section class="team" id="team">
       <div class="container">
-        <div class="team__wrapper reveal">
-          <div class="team__image">
-            <div class="team__slider" id="teamSlider">
-              <img class="team__slide active" src="assets/images/team/1.jpg" alt="Команда Своє Море" loading="lazy">
-              <img class="team__slide" src="assets/images/team/2.jpg" alt="Команда Своє Море" loading="lazy">
-              <img class="team__slide" src="assets/images/team/3.jpg" alt="Команда Своє Море" loading="lazy">
-              <img class="team__slide" src="assets/images/team/4.jpg" alt="Команда Своє Море" loading="lazy">
-              <img class="team__slide" src="assets/images/team/5.jpg" alt="Команда Своє Море" loading="lazy">
+        <div class="section__header">
+          <h2 class="section__title reveal" data-i18n="team.title">Наша команда</h2>
+        </div>
+
+        <div class="team__gallery reveal" id="teamGallery">
+          <div class="team__main">
+            <img class="team__main-img" id="teamMainImg" src="assets/images/team/1.jpg" alt="Команда Своє Море" data-index="0">
+          </div>
+          <div class="team__thumbs">
+            <div class="team__thumb active" data-index="0">
+              <img src="assets/images/team/1.jpg" alt="Команда Своє Море" loading="lazy">
             </div>
-            <div class="team__dots" id="teamDots">
-              <button class="team__dot active" data-index="0"></button>
-              <button class="team__dot" data-index="1"></button>
-              <button class="team__dot" data-index="2"></button>
-              <button class="team__dot" data-index="3"></button>
-              <button class="team__dot" data-index="4"></button>
+            <div class="team__thumb" data-index="1">
+              <img src="assets/images/team/2.jpg" alt="Команда Своє Море" loading="lazy">
+            </div>
+            <div class="team__thumb" data-index="2">
+              <img src="assets/images/team/3.jpg" alt="Команда Своє Море" loading="lazy">
+            </div>
+            <div class="team__thumb" data-index="3">
+              <img src="assets/images/team/4.jpg" alt="Команда Своє Море" loading="lazy">
+            </div>
+            <div class="team__thumb" data-index="4">
+              <img src="assets/images/team/5.jpg" alt="Команда Своє Море" loading="lazy">
             </div>
           </div>
-          <div class="team__content">
-            <h2 class="team__title" data-i18n="team.title">Наша команда</h2>
-            <p class="team__text" data-i18n="team.text">
-              50+ штатних робітників. Досвідчені професіонали, які пройшли навчання на провідних підприємствах Європи. Кожен член нашої команди — майстер своєї справи, який відповідально підходить до кожного проєкту.
-            </p>
-            <div class="team__stats">
-              <div class="team__stat">
-                <div class="team__stat-number">50+</div>
-                <div class="team__stat-label" data-i18n="team.stat1">Працівників</div>
-              </div>
-              <div class="team__stat">
-                <div class="team__stat-number">10+</div>
-                <div class="team__stat-label" data-i18n="team.stat2">Років досвіду</div>
-              </div>
-              <div class="team__stat">
-                <div class="team__stat-number">200+</div>
-                <div class="team__stat-label" data-i18n="team.stat3">Проєктів</div>
-              </div>
+        </div>
+
+        <div class="team__info reveal">
+          <p class="team__text" data-i18n="team.text">
+            50+ штатних робітників. Досвідчені професіонали, які пройшли навчання на провідних підприємствах Європи. Кожен член нашої команди — майстер своєї справи, який відповідально підходить до кожного проєкту.
+          </p>
+          <div class="team__stats">
+            <div class="team__stat">
+              <div class="team__stat-number">50+</div>
+              <div class="team__stat-label" data-i18n="team.stat1">Працівників</div>
+            </div>
+            <div class="team__stat">
+              <div class="team__stat-number">10+</div>
+              <div class="team__stat-label" data-i18n="team.stat2">Років досвіду</div>
+            </div>
+            <div class="team__stat">
+              <div class="team__stat-number">200+</div>
+              <div class="team__stat-label" data-i18n="team.stat3">Проєктів</div>
             </div>
           </div>
         </div>
