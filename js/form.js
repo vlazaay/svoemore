@@ -90,7 +90,10 @@ const ContactForm = (function () {
       submitBtn.textContent = 'Надсилаємо...';
     }
 
-    fetch('api/send-email.php', {
+    var url = (typeof EMAIL_API_URL !== 'undefined' && EMAIL_API_URL) ? EMAIL_API_URL : 'api/send-email.php';
+    data.source = data.source || 'contact';
+
+    fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
@@ -104,7 +107,6 @@ const ContactForm = (function () {
         if (form) form.reset();
       })
       .catch(function () {
-        // Fallback: still show success (email endpoint might not exist in dev)
         showModal();
         if (form) form.reset();
       })

@@ -339,9 +339,8 @@ const Calculator = (function () {
       phone: phone.value.trim(),
       messenger: messenger ? messenger.value : '',
       service: state.type,
-      summary: els.summary ? els.summary.textContent : '',
-      price_min: els.priceMin ? els.priceMin.textContent : '',
-      price_max: els.priceMax ? els.priceMax.textContent : ''
+      message: (els.summary ? els.summary.textContent : '') + ' | ' + (els.priceMin ? els.priceMin.textContent : '') + ' - ' + (els.priceMax ? els.priceMax.textContent : ''),
+      source: 'calculator'
     };
 
     ContactForm.submitData(data);

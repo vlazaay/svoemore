@@ -102,30 +102,28 @@ const Popup = (function () {
     submitBtn.textContent = 'Надсилаємо...';
     submitBtn.disabled = true;
 
-    // Send to server (or show success)
-    var formData = new FormData(form);
-    formData.append('source', 'popup');
+    var url = (typeof EMAIL_API_URL !== 'undefined' && EMAIL_API_URL) ? EMAIL_API_URL : 'api/send-email.php';
+    var data = {
+      name: nameInput.value.trim(),
+      phone: phoneInput.value.trim(),
+      source: 'popup'
+    };
 
-    fetch('api/send-email.php', {
+    fetch(url, {
       method: 'POST',
-      body: formData
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
     })
       .then(function (res) { return res.json(); })
-      .then(function (data) {
+      .then(function () {
         closePopup();
-        // Show success modal
         var successModal = document.getElementById('successModal');
-        if (successModal) {
-          successModal.classList.add('active');
-        }
+        if (successModal) successModal.classList.add('active');
       })
       .catch(function () {
-        // Still close and show success for demo purposes
         closePopup();
         var successModal = document.getElementById('successModal');
-        if (successModal) {
-          successModal.classList.add('active');
-        }
+        if (successModal) successModal.classList.add('active');
       })
       .finally(function () {
         submitBtn.textContent = originalText;
