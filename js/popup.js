@@ -10,6 +10,9 @@ const Popup = (function () {
   var timeoutId = null;
 
   function init() {
+    // Init certificate lightbox (always, regardless of popup state)
+    initCertificateLightbox();
+
     overlay = document.getElementById('popupOverlay');
     if (!overlay) return;
 
@@ -46,9 +49,6 @@ const Popup = (function () {
         closePopup();
       }
     });
-
-    // Also init certificate lightbox
-    initCertificateLightbox();
   }
 
   function isPopupSuppressed() {
