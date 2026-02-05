@@ -57,24 +57,37 @@ function initCertificateLightbox() {
 }
 
 function initTeamSlider() {
-  var gallery = document.getElementById('teamGallery');
-  if (!gallery) return;
+  var topSection = document.getElementById('teamGallery');
+  if (!topSection) return;
 
-  var cards = gallery.querySelectorAll('.team__card');
-  var images = [];
+  // Collect all clickable team photos: hero (index 4) + cards (index 0-3)
+  var images = [
+    'assets/images/team/1.jpg',
+    'assets/images/team/2.jpg',
+    'assets/images/team/3.jpg',
+    'assets/images/team/4.jpg',
+    'assets/images/team/5.jpg'
+  ];
   var current = 0;
 
-  cards.forEach(function (c) {
-    images.push(c.querySelector('img').src);
-  });
+  // Click hero photo → open lightbox at index 4
+  var hero = topSection.querySelector('.team__hero');
+  if (hero) {
+    hero.addEventListener('click', function () {
+      openLightbox(4);
+    });
+  }
 
-  // Click card → open lightbox
-  gallery.addEventListener('click', function (e) {
-    var card = e.target.closest('.team__card');
-    if (!card) return;
-    var idx = parseInt(card.dataset.index, 10);
-    if (!isNaN(idx)) openLightbox(idx);
-  });
+  // Click small cards → open lightbox
+  var thumbsContainer = document.querySelector('.team__thumbs');
+  if (thumbsContainer) {
+    thumbsContainer.addEventListener('click', function (e) {
+      var card = e.target.closest('.team__card');
+      if (!card) return;
+      var idx = parseInt(card.dataset.index, 10);
+      if (!isNaN(idx)) openLightbox(idx);
+    });
+  }
 
   // ---- Lightbox ----
   var lightbox, lbImg, lbCounter, lbTouchStartX;
