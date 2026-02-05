@@ -82,31 +82,55 @@
   },
   "projects": {
     "details": "Learn more",
-    "goodzone": {
-      "info": "Complex with 3 pools"
-    },
-    "biluga": {
-      "name": "BILUGA",
-      "info": "Persyn village, Zaporizhzhia region",
-      "size": "Sea of Azov"
-    },
-    "fithouse": {
-      "info": "Dnipro city"
-    },
-    "lisimore": {
-      "name": "FOREST & SEA",
-      "info": "Hlibivka village, Kyiv region",
-      "size": "SPA complex"
-    },
-    "dogoda": {
-      "info": "Dzvinkove village, Kyiv region"
+    "poolbeach": {
+      "name": "POOL&BEACH",
+      "info": "Aqua complex",
+      "size": "49×25m + 20×20m"
     },
     "morewell": {
       "info": "Tolokuniuk village, Kyiv region",
       "size": "50×15m (aqua complex)"
     },
+    "admiral": {
+      "name": "ADMIRAL",
+      "info": "Aqua complex",
+      "size": "33×15m + 18×15m + 15×5m"
+    },
+    "dogoda": {
+      "info": "Dzvinkove village, Kyiv region",
+      "size": "25×12m"
+    },
+    "lisimore": {
+      "name": "FOREST & SEA",
+      "info": "Hlibivka village, Kyiv region",
+      "size": "25×16m + SPA"
+    },
+    "fithouse": {
+      "info": "Dnipro city",
+      "size": "25×15m"
+    },
+    "goodzone": {
+      "info": "Complex with 3 pools",
+      "size": "23×10m + 25×4m"
+    },
+    "dorozhnyk": {
+      "name": "DOROZHNYK",
+      "info": "Pool",
+      "size": "18×8m"
+    },
+    "kontiki": {
+      "name": "KON TIKI",
+      "info": "Aqua center",
+      "size": "25×10m + 40×15m"
+    },
+    "biluga": {
+      "name": "BILUGA",
+      "info": "Persyn village, Zaporizhzhia region",
+      "size": "680 m² + 330 m²"
+    },
     "grandsofia": {
-      "info": "Southern shore (Kyiv Sea)"
+      "info": "Southern shore (Kyiv Sea)",
+      "size": "28×8m"
     }
   },
   "partners": {
