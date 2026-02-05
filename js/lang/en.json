@@ -85,52 +85,79 @@
     "poolbeach": {
       "name": "POOL&BEACH",
       "info": "Aqua complex",
-      "size": "49×25m + 20×20m"
+      "size": "49×25m + 20×20m",
+      "location": "",
+      "details": "Main pool 49×25m\nChildren's pool 20×20m"
     },
     "morewell": {
+      "name": "MOREWELL",
       "info": "Tolokuniuk village, Kyiv region",
-      "size": "50×15m (aqua complex)"
+      "size": "50×15m (aqua complex)",
+      "location": "Tolokuniuk village, Kyiv region",
+      "details": "Main pool 50×15m\nDepth from 20 to 140 cm\nChildren's pool with water play complex"
     },
     "admiral": {
       "name": "ADMIRAL",
       "info": "Aqua complex",
-      "size": "33×15m + 18×15m + 15×5m"
+      "size": "33×15m + 18×15m + 15×5m",
+      "location": "",
+      "details": "Main pool 33×15m\nSwimming pool 18×15m (depth 1.2-1.7m)\nChildren's pool 15×5m (depth 20-60 cm)"
     },
     "dogoda": {
+      "name": "DOGODA",
       "info": "Dzvinkove village, Kyiv region",
-      "size": "25×12m"
+      "size": "25×12m",
+      "location": "Dzvinkove village, Kyiv region",
+      "details": "Pool size 25×12m\nDepth from 1.2 to 1.5m"
     },
     "lisimore": {
       "name": "FOREST & SEA",
       "info": "Hlibivka village, Kyiv region",
-      "size": "25×16m + SPA"
+      "size": "25×16m + SPA",
+      "location": "Hlibivka village, Kyiv region",
+      "details": "Pool 25×16m\nTwo luxury SPA zones with jacuzzi"
     },
     "fithouse": {
+      "name": "FIT HOUSE",
       "info": "Dnipro city",
-      "size": "25×15m"
+      "size": "25×15m",
+      "location": "Dnipro city",
+      "details": "Pool 25×15m\nLane width 2.5m\nDepth from 1.8 to 2.5m"
     },
     "goodzone": {
+      "name": "GOOD ZONE",
       "info": "Complex with 3 pools",
-      "size": "23×10m + 25×4m"
+      "size": "23×10m + 25×4m",
+      "location": "",
+      "details": "Pool 23×10m\nPool 25×4m"
     },
     "dorozhnyk": {
       "name": "DOROZHNYK",
       "info": "Pool",
-      "size": "18×8m"
+      "size": "18×8m",
+      "location": "",
+      "details": "Main pool 18×8m"
     },
     "kontiki": {
       "name": "KON TIKI",
       "info": "Aqua center",
-      "size": "25×10m + 40×15m"
+      "size": "25×10m + 40×15m",
+      "location": "",
+      "details": "Main pool 25×10m (depth 1.2-1.5m)\nWater park 40×15m"
     },
     "biluga": {
       "name": "BILUGA",
       "info": "Persyn village, Zaporizhzhia region",
-      "size": "680 m² + 330 m²"
+      "size": "680 m² + 330 m²",
+      "location": "Persyn village, Zaporizhzhia region",
+      "details": "Seawater pool 680 m²\nDepth from 1 to 1.7m\nChildren's water park 330 m²"
     },
     "grandsofia": {
+      "name": "GRAND SOFIA",
       "info": "Southern shore (Kyiv Sea)",
-      "size": "28×8m"
+      "size": "28×8m",
+      "location": "Southern shore (Kyiv Sea)",
+      "details": "Pool 28×8m"
     }
   },
   "partners": {

@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   SmoothScroll.init();
   Popup.init();
   initCertificateLightbox();
+  initTeamSlider();
 
   // Lazy load Google Maps
   lazyLoadMap();
@@ -53,6 +54,50 @@ function initCertificateLightbox() {
       closeLightbox();
     }
   });
+}
+
+function initTeamSlider() {
+  var slider = document.getElementById('teamSlider');
+  var dotsContainer = document.getElementById('teamDots');
+  if (!slider || !dotsContainer) return;
+
+  var slides = slider.querySelectorAll('.team__slide');
+  var dots = dotsContainer.querySelectorAll('.team__dot');
+  var current = 0;
+  var interval;
+
+  function goTo(index) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = index;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+
+  function next() {
+    goTo((current + 1) % slides.length);
+  }
+
+  function startAutoplay() {
+    interval = setInterval(next, 4000);
+  }
+
+  function resetAutoplay() {
+    clearInterval(interval);
+    startAutoplay();
+  }
+
+  dotsContainer.addEventListener('click', function (e) {
+    var dot = e.target.closest('.team__dot');
+    if (!dot) return;
+    var idx = parseInt(dot.dataset.index, 10);
+    if (!isNaN(idx) && idx !== current) {
+      goTo(idx);
+      resetAutoplay();
+    }
+  });
+
+  startAutoplay();
 }
 
 function lazyLoadMap() {

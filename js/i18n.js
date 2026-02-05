@@ -128,5 +128,15 @@ const I18n = (function () {
     }, obj);
   }
 
-  return { init: init, switchLang: switchLang };
+  function translate(key) {
+    var data = translations[currentLang];
+    if (!data) return null;
+    return getNestedValue(data, key);
+  }
+
+  function getLang() {
+    return currentLang;
+  }
+
+  return { init: init, switchLang: switchLang, translate: translate, getLang: getLang };
 })();

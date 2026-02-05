@@ -27,6 +27,53 @@
   pointer-events: none;
 }
 
+.team__slider {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/10;
+}
+
+.team__slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.team__slide.active {
+  opacity: 1;
+}
+
+.team__dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.team__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 0;
+}
+
+.team__dot.active {
+  background: var(--color-accent);
+  transform: scale(1.2);
+}
+
+.team__dot:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
 .team__image img {
   width: 100%;
   height: auto;

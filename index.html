@@ -308,7 +308,7 @@
           <div class="project__card" data-project="morewell">
             <img src="assets/images/projects/morewell/1.jpg" alt="MOREWELL" loading="lazy">
             <div class="project__overlay">
-              <h4 class="project__name">MOREWELL</h4>
+              <h4 class="project__name" data-i18n="projects.morewell.name">MOREWELL</h4>
               <p class="project__info" data-i18n="projects.morewell.info">с. Толокунюк, Київська обл.</p>
               <p class="project__size" data-i18n="projects.morewell.size">50×15м (аквакомплекс)</p>
               <span class="project__btn" data-i18n="projects.details">Детальніше</span>
@@ -330,7 +330,7 @@
           <div class="project__card" data-project="dogoda">
             <img src="assets/images/projects/dogoda/1.jpg" alt="DOGODA" loading="lazy">
             <div class="project__overlay">
-              <h4 class="project__name">DOGODA</h4>
+              <h4 class="project__name" data-i18n="projects.dogoda.name">DOGODA</h4>
               <p class="project__info" data-i18n="projects.dogoda.info">с. Дзвінкове, Київська обл.</p>
               <p class="project__size" data-i18n="projects.dogoda.size">25×12м</p>
               <span class="project__btn" data-i18n="projects.details">Детальніше</span>
@@ -352,7 +352,7 @@
           <div class="project__card" data-project="fit-house">
             <img src="assets/images/projects/fit-house/1.jpg" alt="FIT HOUSE" loading="lazy">
             <div class="project__overlay">
-              <h4 class="project__name">FIT HOUSE</h4>
+              <h4 class="project__name" data-i18n="projects.fithouse.name">FIT HOUSE</h4>
               <p class="project__info" data-i18n="projects.fithouse.info">м. Дніпро</p>
               <p class="project__size" data-i18n="projects.fithouse.size">25×15м</p>
               <span class="project__btn" data-i18n="projects.details">Детальніше</span>
@@ -363,7 +363,7 @@
           <div class="project__card" data-project="good-zone">
             <img src="assets/images/projects/good-zone/1.jpg" alt="GOOD ZONE" loading="lazy">
             <div class="project__overlay">
-              <h4 class="project__name">GOOD ZONE</h4>
+              <h4 class="project__name" data-i18n="projects.goodzone.name">GOOD ZONE</h4>
               <p class="project__info" data-i18n="projects.goodzone.info">Комплекс з 3 басейнами</p>
               <p class="project__size" data-i18n="projects.goodzone.size">23×10м + 25×4м</p>
               <span class="project__btn" data-i18n="projects.details">Детальніше</span>
@@ -407,7 +407,7 @@
           <div class="project__card" data-project="grand-sofia">
             <img src="assets/images/projects/grand-sofia/1.jpg" alt="GRAND SOFIA" loading="lazy">
             <div class="project__overlay">
-              <h4 class="project__name">GRAND SOFIA</h4>
+              <h4 class="project__name" data-i18n="projects.grandsofia.name">GRAND SOFIA</h4>
               <p class="project__info" data-i18n="projects.grandsofia.info">Південний берег (Київське море)</p>
               <p class="project__size" data-i18n="projects.grandsofia.size">28×8м</p>
               <span class="project__btn" data-i18n="projects.details">Детальніше</span>
@@ -775,7 +775,20 @@
       <div class="container">
         <div class="team__wrapper reveal">
           <div class="team__image">
-            <img src="assets/images/team/1.jpg" alt="Команда Своє Море" loading="lazy">
+            <div class="team__slider" id="teamSlider">
+              <img class="team__slide active" src="assets/images/team/1.jpg" alt="Команда Своє Море" loading="lazy">
+              <img class="team__slide" src="assets/images/team/2.jpg" alt="Команда Своє Море" loading="lazy">
+              <img class="team__slide" src="assets/images/team/3.jpg" alt="Команда Своє Море" loading="lazy">
+              <img class="team__slide" src="assets/images/team/4.jpg" alt="Команда Своє Море" loading="lazy">
+              <img class="team__slide" src="assets/images/team/5.jpg" alt="Команда Своє Море" loading="lazy">
+            </div>
+            <div class="team__dots" id="teamDots">
+              <button class="team__dot active" data-index="0"></button>
+              <button class="team__dot" data-index="1"></button>
+              <button class="team__dot" data-index="2"></button>
+              <button class="team__dot" data-index="3"></button>
+              <button class="team__dot" data-index="4"></button>
+            </div>
           </div>
           <div class="team__content">
             <h2 class="team__title" data-i18n="team.title">Наша команда</h2>

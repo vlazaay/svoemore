@@ -2,8 +2,24 @@ const Gallery = (function () {
   var modal, modalImg, modalName, modalLocation, modalDetails, modalCounter;
   var prevBtn, nextBtn, closeBtn;
   var currentProject = null;
+  var currentProjectId = null;
   var currentIndex = 0;
   var touchStartX = 0;
+
+  // Map from data-project id to i18n key prefix
+  var PROJECT_I18N = {
+    'pool-beach': 'projects.poolbeach',
+    'morewell': 'projects.morewell',
+    'admiral': 'projects.admiral',
+    'dogoda': 'projects.dogoda',
+    'lis-i-more': 'projects.lisimore',
+    'fit-house': 'projects.fithouse',
+    'good-zone': 'projects.goodzone',
+    'dorozhnyk': 'projects.dorozhnyk',
+    'kon-tiki': 'projects.kontiki',
+    'biluga': 'projects.biluga',
+    'grand-sofia': 'projects.grandsofia'
+  };
 
   var PROJECTS = {
     'pool-beach': {
@@ -80,6 +96,16 @@ const Gallery = (function () {
       arr.push('assets/images/projects/' + projectId + '/' + i + '.jpg');
     }
     return arr;
+  }
+
+  function getTranslated(projectId, field) {
+    var prefix = PROJECT_I18N[projectId];
+    if (!prefix) return null;
+    if (typeof I18n !== 'undefined' && I18n.translate) {
+      var val = I18n.translate(prefix + '.' + field);
+      if (val !== null && val !== undefined) return val;
+    }
+    return null;
   }
 
   function init() {
@@ -162,6 +188,7 @@ const Gallery = (function () {
 
   function openModal(projectId) {
     currentProject = PROJECTS[projectId];
+    currentProjectId = projectId;
     currentIndex = 0;
     updateModal();
     modal.classList.add('active');
@@ -184,10 +211,16 @@ const Gallery = (function () {
   function updateModal() {
     if (!currentProject) return;
     modalImg.src = currentProject.images[currentIndex];
-    modalImg.alt = currentProject.name;
-    modalName.textContent = currentProject.name;
-    modalLocation.textContent = currentProject.location || '';
-    modalDetails.textContent = currentProject.details;
+
+    var name = getTranslated(currentProjectId, 'name') || currentProject.name;
+    var location = getTranslated(currentProjectId, 'location');
+    if (location === null) location = currentProject.location || '';
+    var details = getTranslated(currentProjectId, 'details') || currentProject.details;
+
+    modalImg.alt = name;
+    modalName.textContent = name;
+    modalLocation.textContent = location;
+    modalDetails.textContent = details;
     modalCounter.textContent = (currentIndex + 1) + ' / ' + currentProject.images.length;
 
     var single = currentProject.images.length <= 1;
