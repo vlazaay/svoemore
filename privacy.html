@@ -232,19 +232,21 @@
   <script src="js/i18n.js" defer></script>
   <script src="js/header.js" defer></script>
   <script>
-    // Privacy page language switcher
+    // Privacy page: init I18n for header/footer + toggle privacy content blocks
     document.addEventListener('DOMContentLoaded', function () {
+      // Initialize I18n — handles header/footer translations & lang button states
+      if (typeof I18n !== 'undefined') {
+        I18n.init();
+      }
+
+      // Show correct privacy content block based on saved language
       var lang = localStorage.getItem('lang') || 'uk';
       applyPrivacyLang(lang);
 
+      // Additional click handler for privacy-specific content switching
       document.querySelectorAll('.lang-btn').forEach(function (btn) {
         btn.addEventListener('click', function () {
-          var newLang = this.dataset.lang;
-          localStorage.setItem('lang', newLang);
-          applyPrivacyLang(newLang);
-          document.querySelectorAll('.lang-btn').forEach(function (b) {
-            b.classList.toggle('active', b.dataset.lang === newLang);
-          });
+          applyPrivacyLang(this.dataset.lang);
         });
       });
 
@@ -258,7 +260,6 @@
           en.classList.remove('active');
           uk.classList.add('active');
         }
-        document.documentElement.lang = lang;
       }
     });
   </script>
