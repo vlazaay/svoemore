@@ -60,32 +60,33 @@ function initTeamSlider() {
   var topSection = document.getElementById('teamGallery');
   if (!topSection) return;
 
-  // Collect all clickable team photos: hero (index 4) + cards (index 0-3)
+  // Order: group photo first, then individual photos
   var images = [
+    'assets/images/team/5.jpg',
     'assets/images/team/1.jpg',
     'assets/images/team/2.jpg',
     'assets/images/team/3.jpg',
-    'assets/images/team/4.jpg',
-    'assets/images/team/5.jpg'
+    'assets/images/team/4.jpg'
   ];
   var current = 0;
 
-  // Click hero photo → open lightbox at index 4
+  // Click hero photo → open lightbox at index 0 (group photo)
   var hero = topSection.querySelector('.team__hero');
   if (hero) {
     hero.addEventListener('click', function () {
-      openLightbox(4);
+      openLightbox(0);
     });
   }
 
-  // Click small cards → open lightbox
+  // Click small cards → open lightbox (cards are images 1-4 in order, which map to lightbox indices 1-4)
   var thumbsContainer = document.querySelector('.team__thumbs');
   if (thumbsContainer) {
     thumbsContainer.addEventListener('click', function (e) {
       var card = e.target.closest('.team__card');
       if (!card) return;
       var idx = parseInt(card.dataset.index, 10);
-      if (!isNaN(idx)) openLightbox(idx);
+      // data-index 0-3 on cards map to lightbox indices 1-4
+      if (!isNaN(idx)) openLightbox(idx + 1);
     });
   }
 
