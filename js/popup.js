@@ -10,9 +10,6 @@ const Popup = (function () {
   var timeoutId = null;
 
   function init() {
-    // Init certificate lightbox (always, regardless of popup state)
-    initCertificateLightbox();
-
     overlay = document.getElementById('popupOverlay');
     if (!overlay) return;
 
@@ -135,46 +132,6 @@ const Popup = (function () {
         submitBtn.disabled = false;
         form.reset();
       });
-  }
-
-  // Certificate Lightbox
-  function initCertificateLightbox() {
-    var lightbox = document.getElementById('certificateLightbox');
-    if (!lightbox) return;
-
-    var lightboxImg = lightbox.querySelector('img');
-    var closeBtn = lightbox.querySelector('.certificate-lightbox__close');
-    var cards = document.querySelectorAll('.certificate__card');
-
-    cards.forEach(function (card) {
-      card.addEventListener('click', function () {
-        var src = this.dataset.src || this.querySelector('img').src;
-        lightboxImg.src = src;
-        lightbox.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      });
-    });
-
-    if (closeBtn) {
-      closeBtn.addEventListener('click', closeLightbox);
-    }
-
-    lightbox.addEventListener('click', function (e) {
-      if (e.target === lightbox) {
-        closeLightbox();
-      }
-    });
-
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-        closeLightbox();
-      }
-    });
-
-    function closeLightbox() {
-      lightbox.classList.remove('active');
-      document.body.style.overflow = '';
-    }
   }
 
   return { init: init };
