@@ -97,7 +97,14 @@ const I18n = (function () {
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
       var key = el.dataset.i18n;
       var value = getNestedValue(data, key);
-      if (value) el.textContent = value;
+      if (value) {
+        // Use innerHTML for elements that contain HTML (consent texts, etc.)
+        if (value.indexOf('<') !== -1) {
+          el.innerHTML = value;
+        } else {
+          el.textContent = value;
+        }
+      }
     });
 
     // Placeholders

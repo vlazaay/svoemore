@@ -110,12 +110,26 @@ a.footer__contact-item:hover {
 .footer__bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding: 20px 0;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .footer__bottom p {
   font-size: var(--fs-small);
   color: var(--color-text-muted);
+}
+
+.footer__privacy {
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+}
+
+.footer__privacy:hover {
+  color: var(--color-white);
 }
 
 /* Scroll to top */

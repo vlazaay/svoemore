@@ -69,6 +69,50 @@
       "text": "We use only proven equipment and materials from leading manufacturers"
     }
   },
+  "concrete": {
+    "title": "CONSTRUCTION OF REINFORCED CONCRETE POOLS"
+  },
+  "gallery": {
+    "title": "Our Projects",
+    "subtitle": "Each project is an individual solution created with attention to detail",
+    "all": "All",
+    "pools": "Pools",
+    "spas": "Spa",
+    "hammams": "Hammam"
+  },
+  "projects": {
+    "details": "Learn more",
+    "goodzone": {
+      "info": "Complex with 3 pools"
+    },
+    "biluga": {
+      "name": "BILUGA",
+      "info": "Persyn village, Zaporizhzhia region",
+      "size": "Sea of Azov"
+    },
+    "fithouse": {
+      "info": "Dnipro city"
+    },
+    "lisimore": {
+      "name": "FOREST & SEA",
+      "info": "Hlibivka village, Kyiv region",
+      "size": "SPA complex"
+    },
+    "dogoda": {
+      "info": "Dzvinkove village, Kyiv region"
+    },
+    "morewell": {
+      "info": "Tolokuniuk village, Kyiv region",
+      "size": "50×15m (aqua complex)"
+    },
+    "grandsofia": {
+      "info": "Southern shore (Kyiv Sea)"
+    }
+  },
+  "partners": {
+    "title": "We officially cooperate with European and global manufacturers",
+    "subtitle": "We use only proven equipment and materials"
+  },
   "calc": {
     "title": "Cost Calculator",
     "subtitle": "Calculate the approximate cost of your project in 5 simple steps",
@@ -133,7 +177,8 @@
       "name": "Your name",
       "phone": "Your phone",
       "messenger": "Preferred messenger",
-      "submit": "Get exact calculation"
+      "submit": "Get exact calculation",
+      "consent": "By submitting, you consent to the processing of your personal data. <a href=\"privacy.html\" target=\"_blank\">Privacy Policy</a>"
     }
   },
   "process": {
@@ -164,13 +209,39 @@
       "text": "Final inspection, operation training, 5-year warranty registration."
     }
   },
-  "gallery": {
-    "title": "Our Projects",
-    "subtitle": "Each project is an individual solution created with attention to detail",
-    "all": "All",
-    "pools": "Pools",
-    "spas": "Spa",
-    "hammams": "Hammam"
+  "team": {
+    "title": "Our Team",
+    "text": "50+ full-time employees. Experienced professionals who have been trained at leading European companies. Every member of our team is a master of their craft who takes a responsible approach to every project.",
+    "photoPlaceholder": "Team photo coming soon",
+    "stat1": "Employees",
+    "stat2": "Years of experience",
+    "stat3": "Projects"
+  },
+  "reviews": {
+    "title": "Client Reviews",
+    "count": "· 152 reviews (Google)",
+    "r1": {
+      "text": "I am very satisfied with the cooperation with this company, their professionalism and attention to detail exceeded all my expectations, the pool installation went quickly and without problems, thanks to which I now enjoy my new relaxation spot. I recommend this company to everyone!"
+    },
+    "r2": {
+      "author": "Nazar Podoliaka",
+      "text": "Today I visited «Svoe More», I was pleasantly surprised!!! I received answers to all my questions, professional consultation and valuable advice. Sincerely grateful to consultant Semen for the service! Loyal prices, wide assortment, friendly staff!!! I recommend to everyone!"
+    },
+    "r3": {
+      "avatar": "O",
+      "author": "Oleksandr",
+      "text": "First time I contacted this company regarding the maintenance of my pool. I was very satisfied with the professionalism of the staff and the wide range of products."
+    },
+    "r4": {
+      "text": "Have been a client for several years, the service is top-notch, keep it up!"
+    },
+    "googleBtn": "View all reviews on Google",
+    "disclaimer": "Reviews from the Google profile of the «SVOE MORE» branded store/showroom. Some reviews are about consultations and service, others about installation/construction."
+  },
+  "certificates": {
+    "title": "Certificates & Awards",
+    "subtitle": "Our quality is confirmed by official documents",
+    "zoom": "Zoom in"
   },
   "contact": {
     "title": "Contact Us",
@@ -199,7 +270,8 @@
       "serviceOther": "Other",
       "messageLabel": "Message",
       "messagePlaceholder": "Tell us about your project...",
-      "submit": "Send request"
+      "submit": "Send request",
+      "consent": "By submitting, you consent to the processing of your personal data. <a href=\"privacy.html\" target=\"_blank\">Privacy Policy</a>"
     }
   },
   "map": {
@@ -215,7 +287,8 @@
     "servicesTitle": "Services",
     "contactsTitle": "Contacts",
     "address": "Sofiyivska Borshchahivka, Mykilska St. 1b",
-    "copyright": "© 2025 Svoe More LLC. All rights reserved."
+    "copyright": "© 2025 Svoe More LLC. All rights reserved.",
+    "privacy": "Privacy Policy"
   },
   "modal": {
     "success": {
@@ -223,5 +296,13 @@
       "text": "We will contact you within 30 minutes during business hours.",
       "btn": "OK"
     }
+  },
+  "popup": {
+    "title": "Need a consultation?",
+    "text": "Leave your number and we will call you back within 30 minutes",
+    "name": "Your name",
+    "phone": "+380 XX XXX XX XX",
+    "submit": "Call me back",
+    "consent": "By submitting, you consent to data processing. <a href=\"privacy.html\" target=\"_blank\">Privacy Policy</a>"
   }
 }
