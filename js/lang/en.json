@@ -259,8 +259,8 @@
       "text": "Free measurement and consultation on site. Assessment of conditions and possibilities."
     },
     "step3": {
-      "title": "Design development",
-      "text": "Development of a 3D project, technical documentation and a detailed estimate."
+      "title": "Design",
+      "text": "Development of design project, technical documentation and detailed estimate."
     },
     "step4": {
       "title": "Preparation",
@@ -315,7 +315,7 @@
     "info": {
       "title": "Contact Information",
       "address": "Kyiv region, Sofiyivska Borshchahivka, Mykilska St. 1b",
-      "hours": "Mon-Fri: 9:00-18:00, Sat: 10:00-15:00"
+      "hours": "Mon-Fri: 10:00–18:00 | Sat: 10:00–15:00"
     },
     "form": {
       "nameLabel": "Your name *",
@@ -343,7 +343,7 @@
   "map": {
     "title": "Find Us",
     "address": "Kyiv region, Sofiyivska Borshchahivka, Mykilska St. 1b",
-    "hours": "Mon-Fri: 9:00-18:00, Sat: 10:00-15:00",
+    "hours": "Mon-Fri: 10:00–18:00 | Sat: 10:00–15:00",
     "directions": "Get directions"
   },
   "footer": {

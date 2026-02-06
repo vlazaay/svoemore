@@ -86,6 +86,12 @@
   flex-shrink: 0;
 }
 
+.header__hours {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--fs-xs);
+  white-space: nowrap;
+}
+
 .header__lang {
   display: flex;
   border: 1px solid rgba(255, 255, 255, 0.3);

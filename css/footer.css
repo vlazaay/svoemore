@@ -69,6 +69,7 @@
   font-size: var(--fs-small);
   color: var(--color-text-light);
   transition: color var(--transition);
+  white-space: nowrap;
 }
 
 a.footer__contact-item:hover {
