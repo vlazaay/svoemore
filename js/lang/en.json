@@ -28,12 +28,12 @@
     "spa": {
       "title": "Spa & Jacuzzi",
       "text": "Design and installation of spa zones, jacuzzis and relaxation areas. We create a personal oasis of relaxation tailored to your wishes.",
-      "link": "Calculate cost →"
+      "link": "Visit →"
     },
     "hammam": {
       "title": "Hammam",
       "text": "Construction of Turkish baths of any configuration. Steam generators, heated loungers, natural stone and mosaic finishes.",
-      "link": "Calculate cost →"
+      "link": "Book a consultation →"
     },
     "cta": {
       "title": "We create a space for your relaxation",
@@ -262,7 +262,7 @@
   },
   "team": {
     "title": "Our Team",
-    "text": "50+ full-time employees. Experienced professionals who have been trained at leading European companies. Every member of our team is a master of their craft who takes a responsible approach to every project.",
+    "text": "30+ full-time employees. Experienced professionals who have been trained at leading European companies. Every member of our team is a master of their craft who takes a responsible approach to every project.",
     "photoPlaceholder": "Team photo coming soon",
     "stat1": "Employees",
     "stat2": "Years of experience",

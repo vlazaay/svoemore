@@ -43,6 +43,52 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+  /* Concrete frame */
+  padding: clamp(20px, 3vw, 40px) clamp(30px, 5vw, 60px);
+  border: 4px solid transparent;
+  border-image: linear-gradient(
+    135deg,
+    #a0a0a0 0%,
+    #c0c0c0 20%,
+    #808080 40%,
+    #909090 60%,
+    #b0b0b0 80%,
+    #707070 100%
+  ) 1;
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(0, 0, 0, 0.3),
+    0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.concrete-heading__text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 4px solid;
+  border-image: linear-gradient(
+    135deg,
+    #a0a0a0 0%,
+    #d0d0d0 25%,
+    #909090 50%,
+    #c0c0c0 75%,
+    #808080 100%
+  ) 1;
+  pointer-events: none;
+}
+
+.concrete-heading__text::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid rgba(100, 100, 100, 0.5);
+  pointer-events: none;
 }
 
 /* Projects Grid */

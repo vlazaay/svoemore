@@ -189,7 +189,7 @@
             </div>
             <h3 class="services__card-title" data-i18n="services.spa.title">Спа & Джакузі</h3>
             <p class="services__card-text" data-i18n="services.spa.text">Проєктування та встановлення спа-зон, джакузі та зон відпочинку. Створюємо особистий оазис релаксації з урахуванням всіх ваших побажань.</p>
-            <a href="#calculator" class="services__card-link" data-i18n="services.spa.link">Розрахувати вартість &rarr;</a>
+            <a href="https://lux-jacuzzi.com.ua/" target="_blank" rel="noopener noreferrer" class="services__card-link" data-i18n="services.spa.link">Відвідати &rarr;</a>
           </div>
 
           <!-- Hammam -->
@@ -204,7 +204,7 @@
             </div>
             <h3 class="services__card-title" data-i18n="services.hammam.title">Хамам</h3>
             <p class="services__card-text" data-i18n="services.hammam.text">Будівництво турецьких лазень будь-якої конфігурації. Парогенератори, підігрів лежаків, оздоблення натуральним каменем та мозаїкою.</p>
-            <a href="#calculator" class="services__card-link" data-i18n="services.hammam.link">Розрахувати вартість &rarr;</a>
+            <a href="#contact" class="services__card-link" data-i18n="services.hammam.link">Замовити консультацію &rarr;</a>
           </div>
         </div>
 
@@ -236,7 +236,7 @@
           </div>
 
           <div class="card card--dark advantages__item reveal">
-            <div class="advantages__number" data-count="200">0</div>
+            <div class="advantages__number" data-count="350">0</div>
             <div class="advantages__plus">+</div>
             <h3 class="advantages__label" data-i18n="advantages.projects.label">Реалізованих проєктів</h3>
             <p data-i18n="advantages.projects.text">Від приватних басейнів до комерційних спа-комплексів</p>
@@ -439,8 +439,8 @@
     <section class="section section--light" id="calculator">
       <div class="container">
         <div class="section__header">
-          <h2 class="section__title reveal" data-i18n="calc.title">Калькулятор вартості</h2>
-          <p class="section__subtitle reveal" data-i18n="calc.subtitle">Розрахуйте орієнтовну вартість вашого проєкту за 5 простих кроків</p>
+          <h2 class="section__title reveal">Калькулятор басейну</h2>
+          <p class="section__subtitle reveal">Розрахуйте орієнтовну вартість вашого проєкту за 5 простих кроків</p>
         </div>
 
         <div class="calc reveal">
@@ -458,92 +458,116 @@
             </div>
           </div>
 
-          <!-- Step 1: Type -->
+          <!-- Step 1: Object Type, Bowl Type, Location -->
           <div class="calc__panel active" data-panel="1">
-            <h3 class="calc__panel-title" data-i18n="calc.step1.title">Оберіть тип споруди</h3>
-            <div class="calc__options grid grid--2">
-              <label class="calc__option">
-                <input type="radio" name="calcType" value="pool">
-                <div class="calc__option-card">
-                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h2a2 2 0 0 1 2 2v0a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2v0a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v0a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2v0a2 2 0 0 1 2-2h2"/><path d="M2 18h2a2 2 0 0 1 2 2v0a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2v0a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v0a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2v0a2 2 0 0 1 2-2h2"/><path d="M12 2v4"/><path d="M6 6l2 2"/><path d="M18 6l-2 2"/></svg>
-                  <span data-i18n="calc.step1.pool">Басейн</span>
-                </div>
-              </label>
-              <label class="calc__option">
-                <input type="radio" name="calcType" value="spa">
-                <div class="calc__option-card">
-                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c-4.97 0-9-2.24-9-5v-4c0 2.76 4.03 5 9 5s9-2.24 9-5v4c0 2.76-4.03 5-9 5z"/><path d="M12 17c-4.97 0-9-2.24-9-5V8c0 2.76 4.03 5 9 5s9-2.24 9-5v4c0 2.76-4.03 5-9 5z"/><ellipse cx="12" cy="8" rx="9" ry="5"/></svg>
-                  <span data-i18n="calc.step1.spa">Спа / Джакузі</span>
-                </div>
-              </label>
-              <label class="calc__option">
-                <input type="radio" name="calcType" value="hammam">
-                <div class="calc__option-card">
-                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01"/><path d="M15 9h.01"/><path d="M12 2a10 10 0 0 0-6.88 17.23l1.34 2.68A1 1 0 0 0 7.35 23h9.3a1 1 0 0 0 .89-.55l1.34-2.68A10 10 0 0 0 12 2z"/></svg>
-                  <span data-i18n="calc.step1.hammam">Хамам</span>
-                </div>
-              </label>
-              <label class="calc__option">
-                <input type="radio" name="calcType" value="complex">
-                <div class="calc__option-card">
-                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v3"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
-                  <span data-i18n="calc.step1.complex">Комплекс</span>
-                </div>
-              </label>
-            </div>
-          </div>
+            <p class="calc__step-info">Крок 1/5 • Оберіть базові параметри</p>
+            <p class="calc__group-label">Тип об'єкта</p>
 
-          <!-- Step 2: Subtype & Location -->
-          <div class="calc__panel" data-panel="2">
-            <h3 class="calc__panel-title" data-i18n="calc.step2.title">Деталі конструкції</h3>
-            <div class="calc__group" id="calcPoolType">
-              <p class="calc__group-label" data-i18n="calc.step2.poolType">Тип басейну</p>
+            <!-- Fixed Pool Type Badge -->
+            <div class="calc__fixed-type">
+              <span class="calc__fixed-type-name">Басейн</span>
+              <span class="calc__fixed-type-hint">вибрано за замовчуванням</span>
+            </div>
+            <input type="hidden" name="calcType" value="pool">
+
+            <div class="calc__group">
+              <p class="calc__group-label">Тип чаші</p>
               <div class="calc__options calc__options--row">
                 <label class="calc__option calc__option--sm">
-                  <input type="radio" name="calcPoolType" value="skimmer">
+                  <input type="radio" name="calcBowlType" value="concrete">
                   <div class="calc__option-card">
-                    <span data-i18n="calc.step2.skimmer">Скімерний</span>
+                    <span>Бетонна (моноліт)</span>
                   </div>
                 </label>
                 <label class="calc__option calc__option--sm">
-                  <input type="radio" name="calcPoolType" value="overflow">
+                  <input type="radio" name="calcBowlType" value="composite">
                   <div class="calc__option-card">
-                    <span data-i18n="calc.step2.overflow">Переливний</span>
+                    <span>Композитна чаша</span>
                   </div>
                 </label>
               </div>
             </div>
-            <div class="calc__group" id="calcLocation">
-              <p class="calc__group-label" data-i18n="calc.step2.location">Розташування</p>
+
+            <div class="calc__group">
+              <p class="calc__group-label">Розташування</p>
               <div class="calc__options calc__options--row">
                 <label class="calc__option calc__option--sm">
                   <input type="radio" name="calcLocation" value="outdoor">
                   <div class="calc__option-card">
-                    <span data-i18n="calc.step2.outdoor">Вуличний</span>
+                    <span>Вуличний</span>
                   </div>
                 </label>
                 <label class="calc__option calc__option--sm">
                   <input type="radio" name="calcLocation" value="indoor">
                   <div class="calc__option-card">
-                    <span data-i18n="calc.step2.indoor">Критий</span>
+                    <span>У приміщенні</span>
                   </div>
                 </label>
               </div>
             </div>
-            <div class="calc__group" id="calcSpaSize" style="display:none;">
-              <p class="calc__group-label" data-i18n="calc.step2.spaSize">Розмір спа</p>
+          </div>
+
+          <!-- Step 2: Construction Details -->
+          <div class="calc__panel" data-panel="2">
+            <p class="calc__step-info">Крок 2/5 • Основні рішення</p>
+            <h3 class="calc__panel-title">Деталі конструкції</h3>
+
+            <div class="calc__group">
+              <p class="calc__group-label">Форма</p>
               <div class="calc__options calc__options--row">
                 <label class="calc__option calc__option--sm">
-                  <input type="radio" name="calcSpaSize" value="4">
-                  <div class="calc__option-card"><span data-i18n="calc.step2.spa4">4 особи</span></div>
+                  <input type="radio" name="calcShape" value="rectangular">
+                  <div class="calc__option-card">
+                    <span>Прямокутна</span>
+                  </div>
                 </label>
                 <label class="calc__option calc__option--sm">
-                  <input type="radio" name="calcSpaSize" value="6">
-                  <div class="calc__option-card"><span data-i18n="calc.step2.spa6">6 осіб</span></div>
+                  <input type="radio" name="calcShape" value="oval">
+                  <div class="calc__option-card">
+                    <span>Овальна</span>
+                  </div>
                 </label>
                 <label class="calc__option calc__option--sm">
-                  <input type="radio" name="calcSpaSize" value="8">
-                  <div class="calc__option-card"><span data-i18n="calc.step2.spa8">8 осіб</span></div>
+                  <input type="radio" name="calcShape" value="custom">
+                  <div class="calc__option-card">
+                    <span>Нестандартна</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="calc__group">
+              <p class="calc__group-label">Тип водообміну</p>
+              <div class="calc__options calc__options--row">
+                <label class="calc__option calc__option--sm">
+                  <input type="radio" name="calcPoolType" value="skimmer">
+                  <div class="calc__option-card">
+                    <span>Скімерний</span>
+                  </div>
+                </label>
+                <label class="calc__option calc__option--sm">
+                  <input type="radio" name="calcPoolType" value="overflow">
+                  <div class="calc__option-card">
+                    <span>Переливний</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="calc__group">
+              <p class="calc__group-label">Вхід у басейн</p>
+              <div class="calc__options calc__options--row">
+                <label class="calc__option calc__option--sm">
+                  <input type="radio" name="calcEntry" value="stairs">
+                  <div class="calc__option-card">
+                    <span>Вбудовані сходи</span>
+                  </div>
+                </label>
+                <label class="calc__option calc__option--sm">
+                  <input type="radio" name="calcEntry" value="ladder">
+                  <div class="calc__option-card">
+                    <span>Драбина / не визначився</span>
+                  </div>
                 </label>
               </div>
             </div>
@@ -551,163 +575,141 @@
 
           <!-- Step 3: Dimensions -->
           <div class="calc__panel" data-panel="3">
-            <h3 class="calc__panel-title" data-i18n="calc.step3.title">Розміри</h3>
+            <p class="calc__step-info">Крок 3/5 • Вкажіть габарити</p>
+            <h3 class="calc__panel-title">Розміри</h3>
             <div class="calc__dimensions" id="calcDimensions">
               <div class="calc__slider-group">
                 <label class="calc__slider-label">
-                  <span data-i18n="calc.step3.length">Довжина (м)</span>
+                  <span>Довжина (м)</span>
                   <output id="calcLength">6</output>
                 </label>
                 <input type="range" class="calc__slider" id="calcLengthRange" min="3" max="25" step="0.5" value="6">
               </div>
               <div class="calc__slider-group">
                 <label class="calc__slider-label">
-                  <span data-i18n="calc.step3.width">Ширина (м)</span>
+                  <span>Ширина (м)</span>
                   <output id="calcWidth">3</output>
                 </label>
                 <input type="range" class="calc__slider" id="calcWidthRange" min="2" max="12" step="0.5" value="3">
               </div>
               <div class="calc__slider-group">
                 <label class="calc__slider-label">
-                  <span data-i18n="calc.step3.depth">Глибина (м)</span>
+                  <span>Глибина (м)</span>
                   <output id="calcDepth">1.5</output>
                 </label>
                 <input type="range" class="calc__slider" id="calcDepthRange" min="1.2" max="2.5" step="0.1" value="1.5">
               </div>
               <div class="calc__volume">
-                <span data-i18n="calc.step3.volume">Об'єм:</span>
+                <span>Об'єм:</span>
                 <strong id="calcVolume">27</strong> <span>м&sup3;</span>
-              </div>
-            </div>
-            <div class="calc__dimensions" id="calcHammamDimensions" style="display:none;">
-              <div class="calc__slider-group">
-                <label class="calc__slider-label">
-                  <span data-i18n="calc.step3.area">Площа (м&sup2;)</span>
-                  <output id="calcArea">8</output>
-                </label>
-                <input type="range" class="calc__slider" id="calcAreaRange" min="4" max="30" step="1" value="8">
               </div>
             </div>
           </div>
 
-          <!-- Step 4: Finishing & Equipment -->
+          <!-- Step 4: Equipment -->
           <div class="calc__panel" data-panel="4">
-            <h3 class="calc__panel-title" data-i18n="calc.step4.title">Оздоблення та обладнання</h3>
+            <p class="calc__step-info">Крок 4/5 • Оберіть основні опції</p>
+            <h3 class="calc__panel-title">Комплектація</h3>
+
             <div class="calc__group">
-              <p class="calc__group-label" data-i18n="calc.step4.finish">Оздоблювальний матеріал</p>
+              <p class="calc__group-label">Підігрів</p>
               <div class="calc__options calc__options--row">
                 <label class="calc__option calc__option--sm">
-                  <input type="radio" name="calcFinish" value="pvc">
-                  <div class="calc__option-card">
-                    <span data-i18n="calc.step4.pvc">Плівка ПВХ</span>
-                    <small data-i18n="calc.step4.pvcDesc">Економ</small>
-                  </div>
+                  <input type="radio" name="calcHeating" value="yes">
+                  <div class="calc__option-card"><span>Так</span></div>
                 </label>
                 <label class="calc__option calc__option--sm">
-                  <input type="radio" name="calcFinish" value="mosaic">
-                  <div class="calc__option-card">
-                    <span data-i18n="calc.step4.mosaic">Мозаїка</span>
-                    <small data-i18n="calc.step4.mosaicDesc">Середній</small>
-                  </div>
+                  <input type="radio" name="calcHeating" value="no">
+                  <div class="calc__option-card"><span>Ні</span></div>
                 </label>
                 <label class="calc__option calc__option--sm">
-                  <input type="radio" name="calcFinish" value="stone">
-                  <div class="calc__option-card">
-                    <span data-i18n="calc.step4.stone">Натуральний камінь</span>
-                    <small data-i18n="calc.step4.stoneDesc">Преміум</small>
-                  </div>
+                  <input type="radio" name="calcHeating" value="unknown">
+                  <div class="calc__option-card"><span>Не знаю</span></div>
                 </label>
               </div>
             </div>
+
             <div class="calc__group">
-              <p class="calc__group-label" data-i18n="calc.step4.equipment">Клас обладнання</p>
+              <p class="calc__group-label">Дезінфекція</p>
               <div class="calc__options calc__options--row">
                 <label class="calc__option calc__option--sm">
-                  <input type="radio" name="calcEquipment" value="standard">
-                  <div class="calc__option-card"><span data-i18n="calc.step4.standard">Стандарт</span></div>
+                  <input type="radio" name="calcDisinfection" value="auto">
+                  <div class="calc__option-card"><span>Автоматична</span></div>
                 </label>
                 <label class="calc__option calc__option--sm">
-                  <input type="radio" name="calcEquipment" value="comfort">
-                  <div class="calc__option-card"><span data-i18n="calc.step4.comfort">Комфорт</span></div>
-                </label>
-                <label class="calc__option calc__option--sm">
-                  <input type="radio" name="calcEquipment" value="premium">
-                  <div class="calc__option-card"><span data-i18n="calc.step4.premium">Преміум</span></div>
+                  <input type="radio" name="calcDisinfection" value="basic">
+                  <div class="calc__option-card"><span>Базова / не знаю</span></div>
                 </label>
               </div>
             </div>
+
             <div class="calc__group">
-              <p class="calc__group-label" data-i18n="calc.step4.extras">Додаткові опції</p>
+              <p class="calc__group-label">Додатково (можна обрати декілька)</p>
               <div class="calc__checkboxes">
                 <label class="calc__checkbox">
-                  <input type="checkbox" name="calcExtras" value="heating">
+                  <input type="checkbox" name="calcExtras" value="lighting">
                   <span class="calc__checkbox-mark"></span>
-                  <span data-i18n="calc.step4.heating">Підігрів</span>
+                  <span>Освітлення</span>
                 </label>
                 <label class="calc__checkbox">
-                  <input type="checkbox" name="calcExtras" value="led">
+                  <input type="checkbox" name="calcExtras" value="hydromassage">
                   <span class="calc__checkbox-mark"></span>
-                  <span data-i18n="calc.step4.led">Підсвітка LED</span>
+                  <span>Гідромасаж</span>
                 </label>
                 <label class="calc__checkbox">
                   <input type="checkbox" name="calcExtras" value="counter">
                   <span class="calc__checkbox-mark"></span>
-                  <span data-i18n="calc.step4.counter">Противотечія</span>
+                  <span>Протитечія</span>
                 </label>
                 <label class="calc__checkbox">
                   <input type="checkbox" name="calcExtras" value="waterfall">
                   <span class="calc__checkbox-mark"></span>
-                  <span data-i18n="calc.step4.waterfall">Водоспад</span>
-                </label>
-                <label class="calc__checkbox">
-                  <input type="checkbox" name="calcExtras" value="cover">
-                  <span class="calc__checkbox-mark"></span>
-                  <span data-i18n="calc.step4.cover">Накриття</span>
+                  <span>Водоспад</span>
                 </label>
               </div>
             </div>
           </div>
 
-          <!-- Step 5: Result -->
+          <!-- Step 5: Result & Form -->
           <div class="calc__panel" data-panel="5">
-            <h3 class="calc__panel-title" data-i18n="calc.step5.title">Результат розрахунку</h3>
+            <h3 class="calc__panel-title">Результат розрахунку</h3>
             <div class="calc__result">
-              <div class="calc__result-price">
-                <span class="calc__result-label" data-i18n="calc.step5.price">Орієнтовна вартість:</span>
-                <div class="calc__result-value">
-                  <span data-i18n="calc.step5.from">від</span>
-                  <strong id="calcPriceMin">0</strong>
-                  <span data-i18n="calc.step5.to">до</span>
-                  <strong id="calcPriceMax">0</strong>
-                  <span data-i18n="calc.step5.currency">грн</span>
-                </div>
-              </div>
-              <p class="calc__result-disclaimer" data-i18n="calc.step5.disclaimer">Точна вартість визначається після виїзду спеціаліста та складання кошторису</p>
-
               <div class="calc__result-summary" id="calcSummary"></div>
 
+              <div class="calc__upload-hint">
+                <p>Якщо у вас вже є дизайн-проєкт або попередній прорахунок, прикріпіть файл — ми швидше та детальніше підготуємо кошторис</p>
+                <label class="calc__file-upload">
+                  <input type="file" id="calcFile" accept=".pdf,.dwg,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png">
+                  <span class="calc__file-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+                    Прикріпити файл (PDF / DWG / JPG / PNG)
+                  </span>
+                  <span class="calc__file-name" id="calcFileName"></span>
+                </label>
+              </div>
+
               <div class="calc__result-form">
-                <p class="calc__result-form-title" data-i18n="calc.step5.formTitle">Отримайте точний розрахунок</p>
+                <p class="calc__result-form-title">Отримайте точний розрахунок</p>
                 <div class="calc__result-form-fields">
-                  <input type="text" class="form-input" id="calcName" data-i18n-placeholder="calc.step5.name" placeholder="Ваше ім'я">
-                  <input type="tel" class="form-input" id="calcPhone" data-i18n-placeholder="calc.step5.phone" placeholder="Ваш телефон">
+                  <input type="text" class="form-input" id="calcName" placeholder="Ваше ім'я *" required>
+                  <input type="tel" class="form-input" id="calcPhone" placeholder="Ваш телефон *" required>
+                  <input type="email" class="form-input" id="calcEmail" placeholder="Ваш email *" required>
                   <select class="form-select" id="calcMessenger">
-                    <option value="" data-i18n="calc.step5.messenger">Зручний месенджер</option>
-                    <option value="viber">Viber</option>
+                    <option value="">Зручний месенджер</option>
+                    <option value="email">Ел. пошта</option>
                     <option value="telegram">Telegram</option>
-                    <option value="whatsapp">WhatsApp</option>
                   </select>
                 </div>
-                <p class="form-consent" data-i18n="calc.step5.consent">Надсилаючи заявку, Ви даєте згоду на обробку Ваших персональних даних. <a href="privacy.html" target="_blank">Політика конфіденційності</a></p>
-                <button class="btn btn--primary btn--block" id="calcSubmit" data-i18n="calc.step5.submit">Отримати точний розрахунок</button>
+                <p class="form-consent">Надсилаючи заявку, Ви даєте згоду на обробку Ваших персональних даних. <a href="privacy.html" target="_blank">Політика конфіденційності</a></p>
+                <button class="btn btn--primary btn--block" id="calcSubmit">Отримати точний розрахунок</button>
               </div>
             </div>
           </div>
 
           <!-- Navigation -->
           <div class="calc__nav">
-            <button class="btn btn--outline-dark calc__prev" id="calcPrev" data-i18n="calc.prev" style="visibility: hidden;">Назад</button>
-            <button class="btn btn--primary calc__next" id="calcNext" data-i18n="calc.next">Далі</button>
+            <button class="btn btn--outline-dark calc__prev" id="calcPrev" style="visibility: hidden;">Назад</button>
+            <button class="btn btn--primary calc__next" id="calcNext">Далі</button>
           </div>
         </div>
       </div>
@@ -739,7 +741,7 @@
           <div class="process__step reveal">
             <div class="process__step-number">3</div>
             <div class="process__step-content">
-              <h3 data-i18n="process.step3.title">Проєктування</h3>
+              <h3 data-i18n="process.step3.title">Розробка дизайн-проєкту</h3>
               <p data-i18n="process.step3.text">Розробка 3D-проєкту, технічної документації та детального кошторису.</p>
             </div>
           </div>
@@ -778,19 +780,19 @@
           <div class="team__content">
             <h2 class="team__title" data-i18n="team.title">Наша команда</h2>
             <p class="team__text" data-i18n="team.text">
-              50+ штатних робітників. Досвідчені професіонали, які пройшли навчання на провідних підприємствах Європи. Кожен член нашої команди — майстер своєї справи, який відповідально підходить до кожного проєкту.
+              30+ штатних робітників. Досвідчені професіонали, які пройшли навчання на провідних підприємствах Європи. Кожен член нашої команди — майстер своєї справи, який відповідально підходить до кожного проєкту.
             </p>
             <div class="team__stats">
               <div class="team__stat">
-                <div class="team__stat-number">50+</div>
-                <div class="team__stat-label" data-i18n="team.stat1">Працівників</div>
+                <div class="team__stat-number">30+</div>
+                <div class="team__stat-label" data-i18n="team.stat1">Співробітників</div>
               </div>
               <div class="team__stat">
                 <div class="team__stat-number">10+</div>
                 <div class="team__stat-label" data-i18n="team.stat2">Років досвіду</div>
               </div>
               <div class="team__stat">
-                <div class="team__stat-number">200+</div>
+                <div class="team__stat-number">350+</div>
                 <div class="team__stat-label" data-i18n="team.stat3">Проєктів</div>
               </div>
             </div>
@@ -1078,6 +1080,10 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               098-001-91-01
             </a>
+            <span class="footer__contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span data-i18n="footer.hours">пн-пт: 10:00–18:00 | сб: 10:00–15:00</span>
+            </span>
             <span class="footer__contact-item">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
               <span data-i18n="footer.address">Софіївська Борщагівка, вул. Микільська 1б</span>

@@ -352,6 +352,118 @@
   min-width: 180px;
 }
 
+/* Step Info */
+.calc__step-info {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: var(--fs-small);
+  margin-bottom: 8px;
+  font-weight: var(--fw-medium);
+}
+
+/* Fixed Type Badge */
+.calc__fixed-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 20px 32px;
+  background: var(--color-white);
+  border: 2px solid var(--color-primary);
+  border-radius: 12px;
+  margin: 0 auto 24px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.calc__fixed-type-name {
+  font-size: 1.25rem;
+  font-weight: var(--fw-semibold);
+  color: var(--color-text);
+}
+
+.calc__fixed-type-hint {
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+}
+
+/* Summary Rows */
+.calc__summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.calc__summary-row:last-child {
+  border-bottom: none;
+}
+
+.calc__summary-row span {
+  color: var(--color-text-muted);
+}
+
+.calc__summary-row strong {
+  color: var(--color-text);
+  text-align: right;
+}
+
+/* Upload Hint */
+.calc__upload-hint {
+  background: var(--color-light);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.calc__upload-hint p {
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/* File Upload */
+.calc__file-upload {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.calc__file-upload input[type="file"] {
+  display: none;
+}
+
+.calc__file-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: var(--color-white);
+  border: 2px dashed var(--color-primary);
+  border-radius: var(--radius);
+  color: var(--color-primary);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-small);
+  transition: all var(--transition);
+}
+
+.calc__file-btn:hover {
+  background: rgba(0, 82, 181, 0.05);
+  border-style: solid;
+}
+
+.calc__file-name {
+  font-size: var(--fs-xs);
+  color: var(--color-success);
+  font-weight: var(--fw-medium);
+}
+
 /* Navigation */
 .calc__nav {
   display: flex;
