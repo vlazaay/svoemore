@@ -460,47 +460,46 @@
 
           <!-- Step 1: Object Type, Bowl Type, Location -->
           <div class="calc__panel active" data-panel="1">
-            <p class="calc__step-info">Крок 1/5 • Оберіть базові параметри</p>
-            <p class="calc__group-label">Тип об'єкта</p>
+            <p class="calc__step-info" data-i18n="calc.step1.info">Крок 1 з 5</p>
+            <p class="calc__group-label" data-i18n="calc.summary.objectType">Тип об'єкта</p>
 
             <!-- Fixed Pool Type Badge -->
             <div class="calc__fixed-type">
-              <span class="calc__fixed-type-name">Басейн</span>
-              <span class="calc__fixed-type-hint">вибрано за замовчуванням</span>
+              <span class="calc__fixed-type-name" data-i18n="calc.summary.pool">Басейн</span>
             </div>
             <input type="hidden" name="calcType" value="pool">
 
             <div class="calc__group">
-              <p class="calc__group-label">Тип чаші</p>
+              <p class="calc__group-label" data-i18n="calc.step1.bowlType">Тип чаші</p>
               <div class="calc__options calc__options--row">
                 <label class="calc__option calc__option--sm">
                   <input type="radio" name="calcBowlType" value="concrete">
                   <div class="calc__option-card">
-                    <span>Бетонна (моноліт)</span>
+                    <span data-i18n="calc.step1.concrete">Бетонна (моноліт)</span>
                   </div>
                 </label>
                 <label class="calc__option calc__option--sm">
                   <input type="radio" name="calcBowlType" value="composite">
                   <div class="calc__option-card">
-                    <span>Композитна чаша</span>
+                    <span data-i18n="calc.step1.composite">Композитна чаша</span>
                   </div>
                 </label>
               </div>
             </div>
 
             <div class="calc__group">
-              <p class="calc__group-label">Розташування</p>
+              <p class="calc__group-label" data-i18n="calc.step1.location">Розташування</p>
               <div class="calc__options calc__options--row">
                 <label class="calc__option calc__option--sm">
                   <input type="radio" name="calcLocation" value="outdoor">
                   <div class="calc__option-card">
-                    <span>Вуличний</span>
+                    <span data-i18n="calc.step1.outdoor">Вуличний</span>
                   </div>
                 </label>
                 <label class="calc__option calc__option--sm">
                   <input type="radio" name="calcLocation" value="indoor">
                   <div class="calc__option-card">
-                    <span>У приміщенні</span>
+                    <span data-i18n="calc.step1.indoor">У приміщенні</span>
                   </div>
                 </label>
               </div>
@@ -509,64 +508,64 @@
 
           <!-- Step 2: Construction Details -->
           <div class="calc__panel" data-panel="2">
-            <p class="calc__step-info">Крок 2/5 • Основні рішення</p>
-            <h3 class="calc__panel-title">Деталі конструкції</h3>
+            <p class="calc__step-info" data-i18n="calc.step2.info">Крок 2 з 5</p>
+            <h3 class="calc__panel-title" data-i18n="calc.step2.title">Форма та тип</h3>
 
             <div class="calc__group">
-              <p class="calc__group-label">Форма</p>
+              <p class="calc__group-label" data-i18n="calc.step2.shape">Форма басейну</p>
               <div class="calc__options calc__options--row">
                 <label class="calc__option calc__option--sm">
                   <input type="radio" name="calcShape" value="rectangular">
                   <div class="calc__option-card">
-                    <span>Прямокутна</span>
+                    <span data-i18n="calc.step2.rectangular">Прямокутна</span>
                   </div>
                 </label>
                 <label class="calc__option calc__option--sm">
                   <input type="radio" name="calcShape" value="oval">
                   <div class="calc__option-card">
-                    <span>Овальна</span>
+                    <span data-i18n="calc.step2.oval">Овальна</span>
                   </div>
                 </label>
                 <label class="calc__option calc__option--sm">
                   <input type="radio" name="calcShape" value="custom">
                   <div class="calc__option-card">
-                    <span>Нестандартна</span>
+                    <span data-i18n="calc.step2.custom">Нестандартна</span>
                   </div>
                 </label>
               </div>
             </div>
 
             <div class="calc__group">
-              <p class="calc__group-label">Тип водообміну</p>
+              <p class="calc__group-label" data-i18n="calc.step2.poolType">Тип водообміну</p>
               <div class="calc__options calc__options--row">
                 <label class="calc__option calc__option--sm">
                   <input type="radio" name="calcPoolType" value="skimmer">
                   <div class="calc__option-card">
-                    <span>Скімерний</span>
+                    <span data-i18n="calc.step2.skimmer">Скімерний</span>
                   </div>
                 </label>
                 <label class="calc__option calc__option--sm">
                   <input type="radio" name="calcPoolType" value="overflow">
                   <div class="calc__option-card">
-                    <span>Переливний</span>
+                    <span data-i18n="calc.step2.overflow">Переливний</span>
                   </div>
                 </label>
               </div>
             </div>
 
             <div class="calc__group">
-              <p class="calc__group-label">Вхід у басейн</p>
+              <p class="calc__group-label" data-i18n="calc.step2.entry">Вхід у воду</p>
               <div class="calc__options calc__options--row">
                 <label class="calc__option calc__option--sm">
                   <input type="radio" name="calcEntry" value="stairs">
                   <div class="calc__option-card">
-                    <span>Вбудовані сходи</span>
+                    <span data-i18n="calc.step2.stairs">Вбудовані сходи</span>
                   </div>
                 </label>
                 <label class="calc__option calc__option--sm">
                   <input type="radio" name="calcEntry" value="ladder">
                   <div class="calc__option-card">
-                    <span>Драбина / не визначився</span>
+                    <span data-i18n="calc.step2.ladder">Драбина</span>
                   </div>
                 </label>
               </div>
@@ -575,96 +574,96 @@
 
           <!-- Step 3: Dimensions -->
           <div class="calc__panel" data-panel="3">
-            <p class="calc__step-info">Крок 3/5 • Вкажіть габарити</p>
-            <h3 class="calc__panel-title">Розміри</h3>
+            <p class="calc__step-info" data-i18n="calc.step3.info">Крок 3 з 5</p>
+            <h3 class="calc__panel-title" data-i18n="calc.step3.title">Розміри басейну</h3>
             <div class="calc__dimensions" id="calcDimensions">
               <div class="calc__slider-group">
                 <label class="calc__slider-label">
-                  <span>Довжина (м)</span>
+                  <span data-i18n="calc.step3.length">Довжина (м)</span>
                   <output id="calcLength">6</output>
                 </label>
                 <input type="range" class="calc__slider" id="calcLengthRange" min="3" max="25" step="0.5" value="6">
               </div>
               <div class="calc__slider-group">
                 <label class="calc__slider-label">
-                  <span>Ширина (м)</span>
+                  <span data-i18n="calc.step3.width">Ширина (м)</span>
                   <output id="calcWidth">3</output>
                 </label>
                 <input type="range" class="calc__slider" id="calcWidthRange" min="2" max="12" step="0.5" value="3">
               </div>
               <div class="calc__slider-group">
                 <label class="calc__slider-label">
-                  <span>Глибина (м)</span>
+                  <span data-i18n="calc.step3.depth">Глибина (м)</span>
                   <output id="calcDepth">1.5</output>
                 </label>
                 <input type="range" class="calc__slider" id="calcDepthRange" min="1.2" max="2.5" step="0.1" value="1.5">
               </div>
               <div class="calc__volume">
-                <span>Об'єм:</span>
-                <strong id="calcVolume">27</strong> <span>м&sup3;</span>
+                <span data-i18n="calc.step3.volume">Об'єм:</span>
+                <strong id="calcVolume">27</strong> <span data-i18n="calc.step3.volumeUnit">м³</span>
               </div>
             </div>
           </div>
 
           <!-- Step 4: Equipment -->
           <div class="calc__panel" data-panel="4">
-            <p class="calc__step-info">Крок 4/5 • Оберіть основні опції</p>
-            <h3 class="calc__panel-title">Комплектація</h3>
+            <p class="calc__step-info" data-i18n="calc.step4.info">Крок 4 з 5</p>
+            <h3 class="calc__panel-title" data-i18n="calc.step4.title">Обладнання та додаткові опції</h3>
 
             <div class="calc__group">
-              <p class="calc__group-label">Підігрів</p>
+              <p class="calc__group-label" data-i18n="calc.step4.heating">Підігрів води</p>
               <div class="calc__options calc__options--row">
                 <label class="calc__option calc__option--sm">
                   <input type="radio" name="calcHeating" value="yes">
-                  <div class="calc__option-card"><span>Так</span></div>
+                  <div class="calc__option-card"><span data-i18n="calc.step4.heatingYes">Так</span></div>
                 </label>
                 <label class="calc__option calc__option--sm">
                   <input type="radio" name="calcHeating" value="no">
-                  <div class="calc__option-card"><span>Ні</span></div>
+                  <div class="calc__option-card"><span data-i18n="calc.step4.heatingNo">Ні</span></div>
                 </label>
                 <label class="calc__option calc__option--sm">
                   <input type="radio" name="calcHeating" value="unknown">
-                  <div class="calc__option-card"><span>Не знаю</span></div>
+                  <div class="calc__option-card"><span data-i18n="calc.step4.heatingUnknown">Не визначено</span></div>
                 </label>
               </div>
             </div>
 
             <div class="calc__group">
-              <p class="calc__group-label">Дезінфекція</p>
+              <p class="calc__group-label" data-i18n="calc.step4.disinfection">Тип дезінфекції</p>
               <div class="calc__options calc__options--row">
                 <label class="calc__option calc__option--sm">
                   <input type="radio" name="calcDisinfection" value="auto">
-                  <div class="calc__option-card"><span>Автоматична</span></div>
+                  <div class="calc__option-card"><span data-i18n="calc.step4.disinfectionAuto">Автоматична</span></div>
                 </label>
                 <label class="calc__option calc__option--sm">
                   <input type="radio" name="calcDisinfection" value="basic">
-                  <div class="calc__option-card"><span>Базова / не знаю</span></div>
+                  <div class="calc__option-card"><span data-i18n="calc.step4.disinfectionBasic">Базова</span></div>
                 </label>
               </div>
             </div>
 
             <div class="calc__group">
-              <p class="calc__group-label">Додатково (можна обрати декілька)</p>
+              <p class="calc__group-label" data-i18n="calc.step4.extras">Додаткові опції</p>
               <div class="calc__checkboxes">
                 <label class="calc__checkbox">
                   <input type="checkbox" name="calcExtras" value="lighting">
                   <span class="calc__checkbox-mark"></span>
-                  <span>Освітлення</span>
+                  <span data-i18n="calc.step4.extrasLighting">Освітлення</span>
                 </label>
                 <label class="calc__checkbox">
                   <input type="checkbox" name="calcExtras" value="hydromassage">
                   <span class="calc__checkbox-mark"></span>
-                  <span>Гідромасаж</span>
+                  <span data-i18n="calc.step4.extrasHydromassage">Гідромасаж</span>
                 </label>
                 <label class="calc__checkbox">
                   <input type="checkbox" name="calcExtras" value="counter">
                   <span class="calc__checkbox-mark"></span>
-                  <span>Протитечія</span>
+                  <span data-i18n="calc.step4.extrasCounter">Протитечія</span>
                 </label>
                 <label class="calc__checkbox">
                   <input type="checkbox" name="calcExtras" value="waterfall">
                   <span class="calc__checkbox-mark"></span>
-                  <span>Водоспад</span>
+                  <span data-i18n="calc.step4.extrasWaterfall">Водоспад</span>
                 </label>
               </div>
             </div>
@@ -672,44 +671,45 @@
 
           <!-- Step 5: Result & Form -->
           <div class="calc__panel" data-panel="5">
-            <h3 class="calc__panel-title">Результат розрахунку</h3>
+            <p class="calc__step-info" data-i18n="calc.step5.info">Крок 5 з 5</p>
+            <h3 class="calc__panel-title" data-i18n="calc.step5.summaryTitle">Ваша конфігурація</h3>
             <div class="calc__result">
               <div class="calc__result-summary" id="calcSummary"></div>
 
               <div class="calc__upload-hint">
-                <p>Якщо у вас вже є дизайн-проєкт або попередній прорахунок, прикріпіть файл — ми швидше та детальніше підготуємо кошторис</p>
+                <p data-i18n="calc.step5.uploadHint">Якщо у вас є план ділянки або ескіз, завантажте його — це допоможе нам краще оцінити проєкт</p>
                 <label class="calc__file-upload">
                   <input type="file" id="calcFile" accept=".pdf,.dwg,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png">
                   <span class="calc__file-btn">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
-                    Прикріпити файл (PDF / DWG / JPG / PNG)
+                    <span data-i18n="calc.step5.uploadBtn">Завантажити файл</span>
                   </span>
                   <span class="calc__file-name" id="calcFileName"></span>
                 </label>
               </div>
 
               <div class="calc__result-form">
-                <p class="calc__result-form-title">Отримайте точний розрахунок</p>
+                <p class="calc__result-form-title" data-i18n="calc.step5.formTitle">Отримайте точний розрахунок</p>
                 <div class="calc__result-form-fields">
-                  <input type="text" class="form-input" id="calcName" placeholder="Ваше ім'я *" required>
-                  <input type="tel" class="form-input" id="calcPhone" placeholder="Ваш телефон *" required>
-                  <input type="email" class="form-input" id="calcEmail" placeholder="Ваш email *" required>
+                  <input type="text" class="form-input" id="calcName" data-i18n-placeholder="calc.step5.name" placeholder="Ваше ім'я" required>
+                  <input type="tel" class="form-input" id="calcPhone" data-i18n-placeholder="calc.step5.phone" placeholder="Ваш телефон" required>
+                  <input type="email" class="form-input" id="calcEmail" data-i18n-placeholder="calc.step5.email" placeholder="Ваш email" required>
                   <select class="form-select" id="calcMessenger">
-                    <option value="">Зручний месенджер</option>
-                    <option value="email">Ел. пошта</option>
+                    <option value="" data-i18n="calc.step5.messenger">Зручний месенджер</option>
+                    <option value="email">Email</option>
                     <option value="telegram">Telegram</option>
                   </select>
                 </div>
-                <p class="form-consent">Надсилаючи заявку, Ви даєте згоду на обробку Ваших персональних даних. <a href="privacy.html" target="_blank">Політика конфіденційності</a></p>
-                <button class="btn btn--primary btn--block" id="calcSubmit">Отримати точний розрахунок</button>
+                <p class="form-consent" data-i18n="calc.step5.consent">Надсилаючи заявку, Ви даєте згоду на обробку Ваших персональних даних. <a href="privacy.html" target="_blank">Політика конфіденційності</a></p>
+                <button class="btn btn--primary btn--block" id="calcSubmit" data-i18n="calc.step5.submit">Отримати точний розрахунок</button>
               </div>
             </div>
           </div>
 
           <!-- Navigation -->
           <div class="calc__nav">
-            <button class="btn btn--outline-dark calc__prev" id="calcPrev" style="visibility: hidden;">Назад</button>
-            <button class="btn btn--primary calc__next" id="calcNext">Далі</button>
+            <button class="btn btn--outline-dark calc__prev" id="calcPrev" style="visibility: hidden;" data-i18n="calc.prev">Назад</button>
+            <button class="btn btn--primary calc__next" id="calcNext" data-i18n="calc.next">Далі</button>
           </div>
         </div>
       </div>

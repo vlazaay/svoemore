@@ -201,36 +201,67 @@ const Calculator = (function () {
     }
   }
 
+  function t(key) {
+    if (typeof I18n !== 'undefined' && I18n.translate) {
+      var val = I18n.translate(key);
+      if (val !== null && val !== undefined) return val;
+    }
+    return key;
+  }
+
   function renderSummary() {
-    var bowlTypeLabels = { concrete: 'Бетонна (моноліт)', composite: 'Композитна чаша' };
-    var locationLabels = { outdoor: 'Вуличний', indoor: 'У приміщенні' };
-    var shapeLabels = { rectangular: 'Прямокутна', oval: 'Овальна', custom: 'Нестандартна' };
-    var poolTypeLabels = { skimmer: 'Скімерний', overflow: 'Переливний' };
-    var entryLabels = { stairs: 'Вбудовані сходи', ladder: 'Драбина' };
-    var heatingLabels = { yes: 'Так', no: 'Ні', unknown: 'Не визначено' };
-    var disinfectionLabels = { auto: 'Автоматична', basic: 'Базова' };
+    var bowlTypeLabels = {
+      concrete: t('calc.step1.concrete'),
+      composite: t('calc.step1.composite')
+    };
+    var locationLabels = {
+      outdoor: t('calc.step1.outdoor'),
+      indoor: t('calc.step1.indoor')
+    };
+    var shapeLabels = {
+      rectangular: t('calc.step2.rectangular'),
+      oval: t('calc.step2.oval'),
+      custom: t('calc.step2.custom')
+    };
+    var poolTypeLabels = {
+      skimmer: t('calc.step2.skimmer'),
+      overflow: t('calc.step2.overflow')
+    };
+    var entryLabels = {
+      stairs: t('calc.step2.stairs'),
+      ladder: t('calc.step2.ladder')
+    };
+    var heatingLabels = {
+      yes: t('calc.step4.heatingYes'),
+      no: t('calc.step4.heatingNo'),
+      unknown: t('calc.step4.heatingUnknown')
+    };
+    var disinfectionLabels = {
+      auto: t('calc.step4.disinfectionAuto'),
+      basic: t('calc.step4.disinfectionBasic')
+    };
     var extrasLabels = {
-      lighting: 'Освітлення',
-      hydromassage: 'Гідромасаж',
-      counter: 'Протитечія',
-      waterfall: 'Водоспад'
+      lighting: t('calc.step4.extrasLighting'),
+      hydromassage: t('calc.step4.extrasHydromassage'),
+      counter: t('calc.step4.extrasCounter'),
+      waterfall: t('calc.step4.extrasWaterfall')
     };
 
     var lines = [];
-    lines.push('<div class="calc__summary-row"><span>Тип об\'єкта:</span><strong>Басейн</strong></div>');
-    lines.push('<div class="calc__summary-row"><span>Тип чаші:</span><strong>' + (bowlTypeLabels[state.bowlType] || '—') + '</strong></div>');
-    lines.push('<div class="calc__summary-row"><span>Розташування:</span><strong>' + (locationLabels[state.location] || '—') + '</strong></div>');
-    lines.push('<div class="calc__summary-row"><span>Форма:</span><strong>' + (shapeLabels[state.shape] || '—') + '</strong></div>');
-    lines.push('<div class="calc__summary-row"><span>Тип водообміну:</span><strong>' + (poolTypeLabels[state.poolType] || '—') + '</strong></div>');
-    lines.push('<div class="calc__summary-row"><span>Вхід:</span><strong>' + (entryLabels[state.entry] || '—') + '</strong></div>');
-    lines.push('<div class="calc__summary-row"><span>Розміри:</span><strong>' + state.length + ' × ' + state.width + ' × ' + state.depth + ' м</strong></div>');
-    lines.push('<div class="calc__summary-row"><span>Об\'єм:</span><strong>' + (state.length * state.width * state.depth).toFixed(1) + ' м³</strong></div>');
-    lines.push('<div class="calc__summary-row"><span>Підігрів:</span><strong>' + (heatingLabels[state.heating] || '—') + '</strong></div>');
-    lines.push('<div class="calc__summary-row"><span>Дезінфекція:</span><strong>' + (disinfectionLabels[state.disinfection] || '—') + '</strong></div>');
+    lines.push('<div class="calc__summary-row"><span>' + t('calc.summary.objectType') + ':</span><strong>' + t('calc.summary.pool') + '</strong></div>');
+    lines.push('<div class="calc__summary-row"><span>' + t('calc.summary.bowlType') + ':</span><strong>' + (bowlTypeLabels[state.bowlType] || '—') + '</strong></div>');
+    lines.push('<div class="calc__summary-row"><span>' + t('calc.summary.location') + ':</span><strong>' + (locationLabels[state.location] || '—') + '</strong></div>');
+    lines.push('<div class="calc__summary-row"><span>' + t('calc.summary.shape') + ':</span><strong>' + (shapeLabels[state.shape] || '—') + '</strong></div>');
+    lines.push('<div class="calc__summary-row"><span>' + t('calc.summary.poolType') + ':</span><strong>' + (poolTypeLabels[state.poolType] || '—') + '</strong></div>');
+    lines.push('<div class="calc__summary-row"><span>' + t('calc.summary.entry') + ':</span><strong>' + (entryLabels[state.entry] || '—') + '</strong></div>');
+    lines.push('<div class="calc__summary-row"><span>' + t('calc.summary.dimensions') + ':</span><strong>' + state.length + ' × ' + state.width + ' × ' + state.depth + ' м</strong></div>');
+    lines.push('<div class="calc__summary-row"><span>' + t('calc.summary.volume') + ':</span><strong>' + (state.length * state.width * state.depth).toFixed(1) + ' ' + t('calc.step3.volumeUnit') + '</strong></div>');
+    lines.push('<div class="calc__summary-row"><span>' + t('calc.summary.heating') + ':</span><strong>' + (heatingLabels[state.heating] || '—') + '</strong></div>');
+    lines.push('<div class="calc__summary-row"><span>' + t('calc.summary.disinfection') + ':</span><strong>' + (disinfectionLabels[state.disinfection] || '—') + '</strong></div>');
 
     if (state.extras.length) {
       var extraNames = state.extras.map(function (e) { return extrasLabels[e] || e; });
-      lines.push('<div class="calc__summary-row"><span>Додатково:</span><strong>' + extraNames.join(', ') + '</strong></div>');
+      lines.push('<div class="calc__summary-row"><span>' + t('calc.summary.extras') + ':</span><strong>' + extraNames.join(', ') + '</strong></div>');
     }
 
     if (els.summary) {
