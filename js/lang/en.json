@@ -141,23 +141,23 @@
     "kontiki": {
       "name": "KON TIKI",
       "info": "Aqua center",
-      "size": "25×10m + 40×15m",
+      "size": "25×10m + Water park 40×15m",
       "location": "",
-      "details": "Main pool 25×10m (depth 1.2-1.5m)\nWater park 40×15m"
+      "details": "Main pool 25×10 m\nDepth 1.2-1.5 m\nWater park 40×15 m"
     },
     "biluga": {
       "name": "BILUGA",
-      "info": "Persyn village, Zaporizhzhia region",
+      "info": "Seawater pool",
       "size": "680 m² + 330 m²",
       "location": "Persyn village, Zaporizhzhia region",
-      "details": "Seawater pool 680 m²\nDepth from 1 to 1.7m\nChildren's water park 330 m²"
+      "details": "Seawater pool area 680 m²\nDepth from 1 to 1.7 m\nChildren's water park area 330 m²"
     },
     "grandsofia": {
       "name": "GRAND SOFIA",
-      "info": "Southern shore (Kyiv Sea)",
+      "info": "Pool",
       "size": "28×8m",
-      "location": "Southern shore (Kyiv Sea)",
-      "details": "Pool 28×8m"
+      "location": "",
+      "details": "Pool 28×8 meters"
     }
   },
   "partners": {

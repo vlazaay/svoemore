@@ -71,19 +71,19 @@ const Gallery = (function () {
       details: 'Основний басейн 18\u00d78м'
     },
     'kon-tiki': {
-      images: generateImages('kon-tiki', 1),
+      images: generateImages('kon-tiki', 3),
       name: 'КОН ТІКІ',
       location: '',
       details: 'Основний басейн 25\u00d710м (глибина 1.2-1.5м)\nАквапарк 40\u00d715м'
     },
     'biluga': {
-      images: generateImages('biluga', 1),
+      images: generateImages('biluga', 7),
       name: 'БІЛУГА',
       location: 'с. Персин, Запорізька обл.',
       details: 'Басейн з морською водою 680 м\u00b2\nГлибина від 1 до 1.7м\nДитячий аквапарк 330 м\u00b2'
     },
     'grand-sofia': {
-      images: generateImages('grand-sofia', 1),
+      images: generateImages('grand-sofia', 5),
       name: 'GRAND SOFIA',
       location: 'Південний берег (Київське море)',
       details: 'Басейн 28\u00d78м'
