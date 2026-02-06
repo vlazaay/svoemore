@@ -23,12 +23,12 @@ const I18n = (function () {
       }
     });
 
-    // If not Ukrainian, load and apply translations
-    if (currentLang !== 'uk') {
-      loadLang(currentLang).then(function () {
+    // Always load current language translations (for JS access via translate())
+    loadLang(currentLang).then(function () {
+      if (currentLang !== 'uk') {
         applyTranslations();
-      });
-    }
+      }
+    });
   }
 
   function switchLang(lang) {
