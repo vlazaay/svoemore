@@ -1,93 +1,13 @@
 /* Concrete Heading */
 .concrete-heading {
-  background: url('../assets/images/banners/concrete-bg.jpg') center/cover no-repeat;
-  padding: clamp(60px, 8vw, 120px) 0;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+  line-height: 0;
 }
 
-.concrete-heading::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(10, 22, 40, 0.55);
-  pointer-events: none;
-}
-
-.concrete-heading__text {
-  font-family: var(--font-heading);
-  font-size: clamp(1.75rem, 5vw, 4rem);
-  font-weight: 700;
-  color: var(--color-white);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  text-shadow:
-    2px 2px 0 rgba(0, 0, 0, 0.3),
-    4px 4px 8px rgba(0, 0, 0, 0.2);
-  position: relative;
-  display: inline-block;
-  background: linear-gradient(
-    180deg,
-    #e0e0e0 0%,
-    #c0c0c0 25%,
-    #a0a0a0 50%,
-    #909090 75%,
-    #808080 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
-  /* Concrete frame */
-  padding: clamp(20px, 3vw, 40px) clamp(30px, 5vw, 60px);
-  border: 4px solid transparent;
-  border-image: linear-gradient(
-    135deg,
-    #a0a0a0 0%,
-    #c0c0c0 20%,
-    #808080 40%,
-    #909090 60%,
-    #b0b0b0 80%,
-    #707070 100%
-  ) 1;
-  box-shadow:
-    inset 0 0 0 2px rgba(255, 255, 255, 0.1),
-    0 0 20px rgba(0, 0, 0, 0.3),
-    0 4px 16px rgba(0, 0, 0, 0.2);
-}
-
-.concrete-heading__text::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 4px solid;
-  border-image: linear-gradient(
-    135deg,
-    #a0a0a0 0%,
-    #d0d0d0 25%,
-    #909090 50%,
-    #c0c0c0 75%,
-    #808080 100%
-  ) 1;
-  pointer-events: none;
-}
-
-.concrete-heading__text::after {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  border: 2px solid rgba(100, 100, 100, 0.5);
-  pointer-events: none;
+.concrete-heading__img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Projects Grid */
@@ -385,10 +305,6 @@
 }
 
 @media (max-width: 768px) {
-  .concrete-heading__text {
-    font-size: clamp(1.25rem, 6vw, 2rem);
-    letter-spacing: 0.04em;
-  }
 
   .projects__grid {
     grid-template-columns: repeat(2, 1fr);
