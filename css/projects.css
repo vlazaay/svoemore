@@ -1,13 +1,16 @@
 /* Concrete Heading */
 .concrete-heading {
   text-align: center;
-  line-height: 0;
+  padding: var(--section-py) 0;
 }
 
 .concrete-heading__img {
   width: 100%;
   max-width: 100%;
   height: auto;
+  border-radius: var(--radius-lg);
+  display: block;
+  margin: 0 auto;
 }
 
 /* Projects Grid */
