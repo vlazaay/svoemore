@@ -18,13 +18,13 @@ function initTeamSlider() {
   var topSection = document.getElementById('teamGallery');
   if (!topSection) return;
 
-  // Order: group photo first, then individual photos
   var images = [
-    'assets/images/team/5.jpg',
     'assets/images/team/1.jpg',
     'assets/images/team/2.jpg',
     'assets/images/team/3.jpg',
-    'assets/images/team/4.jpg'
+    'assets/images/team/4.jpg',
+    'assets/images/team/5.jpg',
+    'assets/images/team/6.jpg'
   ];
   var current = 0;
 
@@ -36,15 +36,13 @@ function initTeamSlider() {
     });
   }
 
-  // Click small cards → open lightbox (cards are images 1-4 in order, which map to lightbox indices 1-4)
   var thumbsContainer = document.querySelector('.team__thumbs');
   if (thumbsContainer) {
     thumbsContainer.addEventListener('click', function (e) {
       var card = e.target.closest('.team__card');
       if (!card) return;
       var idx = parseInt(card.dataset.index, 10);
-      // data-index 0-3 on cards map to lightbox indices 1-4
-      if (!isNaN(idx)) openLightbox(idx + 1);
+      if (!isNaN(idx)) openLightbox(idx);
     });
   }
 
