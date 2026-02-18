@@ -74,10 +74,10 @@
   margin-top: 8px;
 }
 
-/* Bottom: 4 small cards */
+/* Bottom: team photo cards in one row */
 .team__thumbs {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 16px;
 }
 
@@ -213,14 +213,14 @@
   }
 
   .team__thumbs {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 12px;
   }
 }
 
 @media (max-width: 768px) {
   .team__thumbs {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
 

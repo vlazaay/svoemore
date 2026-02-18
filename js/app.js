@@ -19,11 +19,11 @@ function initTeamSlider() {
   if (!topSection) return;
 
   var images = [
+    'assets/images/team/hero.jpg',
     'assets/images/team/1.jpg',
     'assets/images/team/2.jpg',
     'assets/images/team/3.jpg',
     'assets/images/team/4.jpg',
-    'assets/images/team/5.jpg',
     'assets/images/team/6.jpg'
   ];
   var current = 0;
