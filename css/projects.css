@@ -1,117 +1,153 @@
-/* Concrete Banner */
-.concrete-banner {
-  background: var(--color-darker);
+/* Concrete Section */
+.concrete {
+  position: relative;
+  overflow: hidden;
   padding: var(--section-py) 0;
 }
 
-.concrete-banner__card {
-  max-width: 520px;
-  margin: 0 auto;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  background: linear-gradient(180deg, #0c1a30 0%, #0f2240 40%, #0a1628 100%);
-  box-shadow: 0 0 60px rgba(0, 82, 181, 0.15), 0 8px 32px rgba(0, 0, 0, 0.4);
+.concrete__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.concrete__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px) brightness(0.3);
+}
+
+.concrete__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 22, 40, 0.92) 0%,
+    rgba(10, 22, 40, 0.75) 50%,
+    rgba(10, 22, 40, 0.6) 100%
+  );
+}
+
+.concrete__grid {
   position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-lg);
+  align-items: center;
 }
 
-.concrete-banner__content {
-  text-align: center;
-  padding: clamp(32px, 5vw, 56px) clamp(24px, 4vw, 48px);
-  padding-bottom: clamp(24px, 3vw, 40px);
+.concrete__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.concrete-banner__logo {
-  display: block;
-  margin: 0 auto 24px;
-  filter: brightness(0) invert(1);
+.concrete__label {
+  display: inline-block;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  color: var(--color-accent);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  padding: 6px 14px;
+  border: 1px solid rgba(0, 163, 255, 0.3);
+  border-radius: var(--radius-full);
 }
 
-.concrete-banner__title {
+.concrete__title {
   font-family: var(--font-heading);
-  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
   font-weight: 700;
   color: var(--color-white);
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  line-height: 1.2;
+  letter-spacing: 0.04em;
+  line-height: 1.15;
   margin-bottom: 24px;
-  padding: clamp(16px, 2.5vw, 28px) clamp(20px, 3vw, 36px);
-  border: 2px solid rgba(255, 255, 255, 0.25);
-  position: relative;
 }
 
-.concrete-banner__title::before {
-  content: '';
-  position: absolute;
-  inset: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.concrete-banner__desc {
-  font-size: clamp(0.85rem, 1.5vw, 1rem);
-  font-weight: var(--fw-semibold);
-  color: var(--color-white);
-  line-height: 1.6;
+.concrete__desc {
+  font-size: clamp(0.9rem, 1.3vw, 1.0625rem);
+  color: var(--color-text-light);
+  line-height: 1.7;
   margin-bottom: 20px;
 }
 
-.concrete-banner__divider {
-  width: 80%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  margin: 0 auto 20px;
+.concrete__accent {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+  border-radius: 2px;
+  margin-bottom: 20px;
 }
 
-.concrete-banner__quote {
-  font-size: clamp(0.85rem, 1.4vw, 1rem);
-  color: rgba(255, 255, 255, 0.75);
+.concrete__quote {
+  font-size: clamp(0.95rem, 1.4vw, 1.125rem);
+  color: var(--color-white);
   font-style: italic;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
+  padding-left: 20px;
+  border-left: 2px solid var(--color-accent);
 }
 
-.concrete-banner__tagline {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  justify-content: center;
-}
-
-.concrete-banner__tagline span:nth-child(2) {
-  font-size: clamp(0.75rem, 1.2vw, 0.875rem);
-  color: rgba(255, 255, 255, 0.5);
-  letter-spacing: 0.1em;
-  text-transform: lowercase;
-  white-space: nowrap;
-}
-
-.concrete-banner__line {
-  flex: 1;
-  max-width: 60px;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.25);
-}
-
-.concrete-banner__photo {
+.concrete__image {
   position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
-.concrete-banner__photo::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  background: linear-gradient(180deg, #0a1628, transparent);
-  z-index: 1;
-  pointer-events: none;
-}
-
-.concrete-banner__photo img {
+.concrete__image img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.concrete__image-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-lg);
+  box-shadow: inset 0 0 0 1px rgba(0, 163, 255, 0.15);
+  pointer-events: none;
+}
+
+.concrete__image-glow::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(180deg, transparent, rgba(10, 22, 40, 0.4));
+  pointer-events: none;
+}
+
+@media (max-width: 968px) {
+  .concrete__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .concrete__text {
+    text-align: center;
+    align-items: center;
+  }
+
+  .concrete__quote {
+    border-left: none;
+    padding-left: 0;
+    border-top: 2px solid var(--color-accent);
+    padding-top: 20px;
+  }
+
+  .concrete__image {
+    max-width: 560px;
+    margin: 0 auto;
+  }
 }
 
 /* Projects Grid */
