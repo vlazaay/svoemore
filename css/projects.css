@@ -9,9 +9,10 @@
   max-width: 480px;
   width: 100%;
   height: auto;
-  border-radius: var(--radius-lg);
   display: block;
   margin: 0 auto;
+  -webkit-mask-image: radial-gradient(ellipse 90% 85% at center, #000 60%, transparent 100%);
+  mask-image: radial-gradient(ellipse 90% 85% at center, #000 60%, transparent 100%);
 }
 
 /* Projects Grid */
