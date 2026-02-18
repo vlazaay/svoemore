@@ -132,8 +132,8 @@
 }
 
 .team-lightbox__img {
-  max-width: 500px;
-  max-height: 85vh;
+  max-width: 90vw;
+  max-height: 90vh;
   object-fit: contain;
   border-radius: var(--radius-lg);
   user-select: none;
