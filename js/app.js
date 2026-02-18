@@ -8,53 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
   ScrollAnimations.init();
   SmoothScroll.init();
   Popup.init();
-  initCertificateLightbox();
   initTeamSlider();
 
   // Lazy load Google Maps
   lazyLoadMap();
 });
-
-function initCertificateLightbox() {
-  var lightbox = document.getElementById('certificateLightbox');
-  if (!lightbox) return;
-
-  var lightboxImg = lightbox.querySelector('img');
-  var closeBtn = lightbox.querySelector('.certificate-lightbox__close');
-
-  // Use event delegation on the certificates grid
-  var grid = document.querySelector('.certificates__grid');
-  if (grid) {
-    grid.addEventListener('click', function (e) {
-      var card = e.target.closest('.certificate__card');
-      if (!card) return;
-      var src = card.dataset.src || card.querySelector('img').src;
-      lightboxImg.src = src;
-      lightbox.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    });
-  }
-
-  function closeLightbox() {
-    lightbox.classList.remove('active');
-    document.body.style.overflow = '';
-    lightboxImg.src = '';
-  }
-
-  if (closeBtn) {
-    closeBtn.addEventListener('click', closeLightbox);
-  }
-
-  lightbox.addEventListener('click', function (e) {
-    if (e.target === lightbox) closeLightbox();
-  });
-
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-      closeLightbox();
-    }
-  });
-}
 
 function initTeamSlider() {
   var topSection = document.getElementById('teamGallery');

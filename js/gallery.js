@@ -41,7 +41,7 @@ const Gallery = (function () {
       details: 'Основний басейн 33\u00d715м\nПлавальний басейн 18\u00d715м (глибина 1.2-1.7м)\nДитячий басейн 15\u00d75м (глибина 20-60 см)'
     },
     'dogoda': {
-      images: generateImages('dogoda', 17),
+      images: generateImages('dogoda', 5),
       name: 'DOGODA',
       location: 'с. Дзвінкове, Київська обл.',
       details: 'Розмір басейну 25\u00d712м\nГлибина від 1.2 до 1.5м'

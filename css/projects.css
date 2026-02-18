@@ -1,7 +1,7 @@
 /* Concrete Heading */
 .concrete-heading {
-  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-darker) 100%);
-  padding: clamp(40px, 6vw, 80px) 0;
+  background: url('../assets/images/banners/concrete-bg.jpg') center/cover no-repeat;
+  padding: clamp(60px, 8vw, 120px) 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -14,8 +14,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  opacity: 0.05;
+  background: rgba(10, 22, 40, 0.55);
   pointer-events: none;
 }
 

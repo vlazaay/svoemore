@@ -9,9 +9,9 @@
   },
   "hero": {
     "title": "SVOE MORE",
-    "slogan": "From the first spring to the endless sea",
+    "slogan": "Treat yourself to a <span class=\"hero__highlight\">Svoe More</span> of pleasure",
     "desc": "Construction of pools, spas and hammams in Kyiv and the region",
-    "badge1": "10+ years of experience",
+    "badge1": "15+ years of experience",
     "badge2": "5-year warranty",
     "badge3": "Custom design",
     "cta1": "Calculate cost",
@@ -277,7 +277,7 @@
   },
   "team": {
     "title": "Our Team",
-    "text": "30+ full-time employees. Experienced professionals who have been trained at leading European companies. Every member of our team is a master of their craft who takes a responsible approach to every project.",
+    "text": "50+ full-time employees. Experienced professionals who have been trained at leading European companies. Every member of our team is a master of their craft who takes a responsible approach to every project.",
     "photoPlaceholder": "Team photo coming soon",
     "stat1": "Employees",
     "stat2": "Years of experience",
@@ -303,11 +303,6 @@
     },
     "googleBtn": "View all reviews on Google",
     "disclaimer": "Reviews from the Google profile of the «SVOE MORE» branded store/showroom. Some reviews are about consultations and service, others about installation/construction."
-  },
-  "certificates": {
-    "title": "Certificates & Awards",
-    "subtitle": "Our quality is confirmed by official documents",
-    "zoom": "Zoom in"
   },
   "contact": {
     "title": "Contact Us",
