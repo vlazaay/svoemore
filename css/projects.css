@@ -1,12 +1,13 @@
 /* Concrete Heading */
 .concrete-heading {
+  background: var(--color-darker);
   text-align: center;
-  padding: var(--section-py) 0;
+  padding: clamp(32px, 4vw, 60px) 0;
 }
 
 .concrete-heading__img {
+  max-width: 480px;
   width: 100%;
-  max-width: 100%;
   height: auto;
   border-radius: var(--radius-lg);
   display: block;
